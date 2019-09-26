@@ -14,7 +14,7 @@ const Header = () => (
             <Link className="pure-menu-link" to="/">Blog</Link>
           </li>
           <li className="pure-menu-item">
-            <Link className="pure-menu-link" to="/">Documentation</Link>
+            <Link className="pure-menu-link" to="https://docs.mun-lang.org">Documentation</Link>
           </li>
           <li className="pure-menu-item">
             <Link className="pure-menu-link" to="/">Donate</Link>
