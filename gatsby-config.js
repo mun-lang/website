@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Mun`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Mun, an application programming language for increased developer efficiency.`,
+    author: `The Mun Development Team`,
   },
   plugins: [
     `gatsby-plugin-react-svg`,
