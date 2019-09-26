@@ -1,0 +1,20 @@
+@import "../styles/pure-min.css";
+@import "../fonts/font.scss";
+@import "../styles/variables.scss";
+
+html {
+  font-family: $font;
+}
+
+body {
+  background-color: $color1;
+}
+
+a {
+  color: $color4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

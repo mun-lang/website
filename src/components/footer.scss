@@ -1,0 +1,11 @@
+@import "../styles/variables.scss";
+
+footer {
+    background-color: $color1;
+    color: lighten($color2, 50);
+}
+
+.footerContent {
+    max-width: $content-max-width;
+    margin: 0 auto;
+}

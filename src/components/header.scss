@@ -1,0 +1,45 @@
+@import "../styles/variables.scss";
+
+header {
+    background-color: $color1;
+}
+
+.navContent {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.pure-menu {
+    &.pure-menu-horizontal {
+        .pure-menu-heading {
+            text-transform: none;
+        }
+        .pure-menu-link {
+            color: $color2;
+            font-size: 120%;
+
+            &:focus {
+                background-color: inherit;
+                outline: none;
+            }
+
+            &:hover {
+                color: $color4;
+                background-color: darken($color1, 4);
+            }
+        }
+
+        .pure-menu-list {
+            float: right;
+        }
+
+        .pure-menu-link.icon {
+            padding-left: 0.8em;
+            padding-right: 0.8em;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
