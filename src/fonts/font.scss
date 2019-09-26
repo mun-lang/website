@@ -54,7 +54,7 @@
 
 $public-sans-font: (
     name: "Public Sans Web",
-    dir: "../fonts/public-sans",
+    dir: "fonts/public-sans",
     normal: (
         100: "PublicSans-Thin",              
         200: "PublicSans-ExtraLight",        
@@ -81,7 +81,7 @@ $public-sans-font: (
 
 @include render-font-face($public-sans-font);
 
-$fa-font-path: "../fonts/fa";
+$fa-font-path: "fonts/fa";
 $fa-font-display: fallback;
 
 @font-face {

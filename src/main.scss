@@ -1,4 +1,48 @@
-@import "../styles/variables.scss";
+@import "./styles/pure-min.css";
+@import "./styles/grids-responsive-min.css";
+@import "./fonts/font.scss";
+@import "./styles/variables.scss";
+
+html {
+  font-family: $font;
+}
+
+body {
+  background-color: $color1;
+}
+
+a {
+  color: $color4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content, .footerContent {
+    max-width: $content-max-width;
+    margin: 0 auto;
+    color: $color2;
+    padding: 0 10px;
+}
+
+.pitch {
+    font-size: 25pt;
+    font-weight: 200;
+    max-width: 800px;
+    margin: 1.5em auto;
+
+    h1 {
+        size: 2em;
+        font-weight: 700;
+        margin-bottom: 0.3em;
+    }
+
+    strong {
+        font-weight: 300;
+    }
+}
 
 header {
     background-color: $color1;
@@ -42,4 +86,12 @@ header {
     a:hover {
         text-decoration: none;
     }
+}
+
+footer {
+    background-color: $color1;
+}
+
+.footerContent {
+    color: lighten($color2, 50);
 }
