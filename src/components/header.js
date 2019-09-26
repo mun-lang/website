@@ -2,12 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <nav className="pure-menu pure-menu-horizontal pure-menu-scrollable">
       <div className="navContent">
         <Link className="pure-menu-heading pure-menu-link" to="/">
-          {siteTitle}
+          Mun
         </Link>
         <ul className="pure-menu-list">
           <li className="pure-menu-item">
