@@ -3,6 +3,8 @@ import React from "react"
 
 import "../styles/_hamburger.scss";
 
+const WINDOW_CHANGE_EVENT = typeof window !== `undefined` && ('onorientationchange' in window) ? 'orientationchange' : 'resize';
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -20,10 +22,10 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.hideMenu);
+    window.addEventListener(WINDOW_CHANGE_EVENT, this.hideMenu);
   }
   componentWillUnmount() {
-    window.removeEventListener('resize', this.hideMenu);
+    window.removeEventListener(WINDOW_CHANGE_EVENT, this.hideMenu);
   }
 
   render() {
