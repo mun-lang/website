@@ -33,12 +33,17 @@ a:hover {
     font-size: 25pt;
     font-weight: 200;
     max-width: 800px;
-    margin: 1.5em auto;
+    margin: 0.5em auto;
+
+    @media #{$md-up} {
+        margin-top: 1.5em;
+    }
 
     h1 {
         size: 2em;
         font-weight: 700;
         margin-bottom: 0.3em;
+        margin-top: 0;
     }
 
     strong {

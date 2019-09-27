@@ -4,14 +4,29 @@ import React from "react"
 
 import "../styles/_hamburger.scss";
 
+const WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = { showMenu: false };
+
+    this.hideMenu = this.hideMenu.bind(this);
   }
 
   toggleMenu() {
     this.setState(prevState => ({ showMenu: !prevState.showMenu }))
+  }
+
+  hideMenu() {
+    this.setState(() => ({ showMenu: false }))
+  }
+
+  componentDidMount() {
+    window.addEventListener(WINDOW_CHANGE_EVENT, this.hideMenu);
+  }
+  componentWillUnmount() {
+    window.removeEventListener(WINDOW_CHANGE_EVENT, this.hideMenu);
   }
 
   render() {
