@@ -4,3 +4,7 @@ $font: "Public Sans Web", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-
 
 $max-width: 1200px;
 $content-max-width: 800px;
+
+$md-breakpoint: 48em;
+
+$md-up: "(min-width: #{$md-breakpoint})" !default;

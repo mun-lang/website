@@ -1,10 +1,12 @@
 @import "./styles/pure-min.css";
 @import "./styles/grids-responsive-min.css";
 @import "./fonts/font.scss";
-@import "./styles/variables.scss";
+@import "./styles/_variables.scss";
 
-html {
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
   font-family: $font;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -24,7 +26,7 @@ a:hover {
     max-width: $content-max-width;
     margin: 0 auto;
     color: $color2;
-    padding: 0 10px;
+    padding: 0 1em;
 }
 
 .pitch {
@@ -46,22 +48,54 @@ a:hover {
 
 header {
     background-color: $color1;
-}
+ //   margin-bottom: 1em;
+    //height: 2.7em;
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.4s;
+    -moz-transition: box-shadow 0.4s;
+    -ms-transition: box-shadow 0.4s;
+    transition: box-shadow 0.4s;
 
-.navContent {
-    max-width: $max-width;
+    max-width: 1200px;
     margin: 0 auto;
-}
 
-.pure-menu {
-    &.pure-menu-horizontal {
+    &.open {
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);    
+
+        @media (max-width: 47.999em) {
+
+            .pure-menu {
+
+                &.menu-contents {
+                    max-height: 1000px;
+                    opacity: 1;
+                }
+    
+                .pure-menu-list {      
+                    display: block;
+                    .pure-menu-heading {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .pure-menu {
         .pure-menu-heading {
             text-transform: none;
         }
-        .pure-menu-link {
+
+        .pure-menu-link, .pure-menu-heading {
             color: $color2;
             font-size: 120%;
+        }
 
+        .pure-menu-link {
             &:focus {
                 background-color: inherit;
                 outline: none;
@@ -77,14 +111,42 @@ header {
             float: right;
         }
 
+        @media (max-width: 47.999em) {
+
+            .pure-menu-list {
+                float: none;
+            }
+
+            &.menu-contents {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s;
+                opacity: 0;
+
+                -webkit-transition: max-height 0.5s,opacity 0.5s;
+                -moz-transition: max-height 0.5s,opacity 0.5s;
+                -ms-transition: max-height 0.5s,opacity 0.5s;
+                transition: max-height 0.5s,opacity 0.5s;
+            }
+
+            .pure-menu-list {
+                width: 100%;
+            }
+
+            .pure-menu-item {
+                display: block;
+                text-align: left;
+            }
+        }
+
         .pure-menu-link.icon {
             padding-left: 0.8em;
             padding-right: 0.8em;
         }
-    }
 
-    a:hover {
-        text-decoration: none;
+        a:hover {
+            text-decoration: none;
+        }
     }
 }
 

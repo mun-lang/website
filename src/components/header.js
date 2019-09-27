@@ -2,63 +2,50 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = () => (
-  <header>
-    <nav className="pure-menu pure-menu-horizontal pure-menu-scrollable">
-      <div className="navContent">
-        <Link className="pure-menu-heading pure-menu-link" to="/">
-          Mun
-        </Link>
-        <ul className="pure-menu-list">
-          <li className="pure-menu-item">
-            <Link className="pure-menu-link" to="/">Blog</Link>
-          </li>
-          <li className="pure-menu-item">
-            <a className="pure-menu-link" to="https://docs.mun-lang.org">Documentation</a>
-          </li>
-          <li className="pure-menu-item">
-            <Link className="pure-menu-link" to="/">Donate</Link>
-          </li>
-          <li className="pure-menu-item">
-            <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun"><span className="fab"></span></a>
-          </li>
-          <li className="pure-menu-item">
-            <a className="pure-menu-link icon" href="https://discord.gg/SfvvcCU"><span className="fab"></span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-)
+import "../styles/_hamburger.scss";
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { showMenu: false };
+  }
 
-Header.defaultProps = {
-  siteTitle: ``,
+  toggleMenu() {
+    this.setState(prevState => ({ showMenu: !prevState.showMenu }))
+  }
+
+  render() {
+    const { showMenu } = this.state;
+    return (
+      <header class={"pure-g" + (showMenu ? " open" : "")}>
+        <div class="pure-u-1 pure-u-md-1-2 pure-menu pure-menu-horizontal">
+          <Link className="pure-menu-heading pure-menu-link" to="/">
+            Mun
+          </Link>
+          <a href="#" class={"hamburger" + (showMenu ? " x" : "")} id="toggle" onClick={() => this.toggleMenu()}><s class="bar"></s><s class="bar"></s></a>
+        </div>
+        <div class={"pure-u-1 pure-u-md-1-2 pure-menu pure-menu-horizontal menu-contents"}>
+          <ul className="pure-menu-list">
+            <li className="pure-menu-item">
+              <Link className="pure-menu-link" to="/">Blog</Link>
+            </li>
+            <li className="pure-menu-item">
+              <a className="pure-menu-link" href="https://docs.mun-lang.org">Documentation</a>
+            </li>
+            <li className="pure-menu-item">
+              <Link className="pure-menu-link" to="/">Donate</Link>
+            </li>
+            <li className="pure-menu-item">
+              <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun"><span className="fab"></span></a>
+            </li>
+            <li className="pure-menu-item">
+              <a className="pure-menu-link icon" href="https://discord.gg/SfvvcCU"><span className="fab"></span></a>
+            </li>
+          </ul>
+        </div>
+      </header >
+    );
+  }
 }
 
 export default Header
-
-/*
-<div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-    */

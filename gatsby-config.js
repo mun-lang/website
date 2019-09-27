@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Mun Programming Language`,
     description: `Mun, an application programming language for increased developer efficiency.`,
+    tagline: `An application programming language for increased developer efficiency.`,
     author: `The Mun Development Team`,
   },
   plugins: [
