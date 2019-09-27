@@ -3,8 +3,11 @@ import React from "react"
 const Footer = () => (
     <footer>
         <div className="footerContent">
-            © {new Date().getFullYear()}, Built with {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <div style={{
+                textAlign: "center"
+            }}>
+                <small>This website is available on <a href="https://github.com/mun-lang/website">Github</a>, contributions are welcome.</small>
+            </div>
         </div>
     </footer>
 )

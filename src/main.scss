@@ -15,6 +15,7 @@ html {
 
 body {
   background-color: $color1;
+  color: $color2;
 }
 
 a {
@@ -29,7 +30,6 @@ a:hover {
 .content, .footerContent {
     max-width: $content-max-width;
     margin: 0 auto;
-    color: $color2;
     padding: 0 1em;
 }
 
@@ -38,36 +38,26 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 25pt;
+    font-weight: 800;
+}
+
 h3 {
     font-size: 20pt;
     font-weight: 200;
 }
 
 @media #{$sm-up} {
-    p {
-
-    }
-
     h1 { font-size: 50pt; }
-    h2 { font-size: 50pt; }
+
+    h2 { font-size: 30pt; }
+
     h3 { font-size: 25pt; }
-}
-
-.pitch {
-    max-width: 800px;
-    margin: 0.5em auto;
-
-    h1 {
-        margin-bottom: 0.2em;
-        margin-top: 0;
-    }
-
-    h3 {
-        margin-top: 0;
-    }
-
-    @media #{$md-up} {
-        margin-top: 1.5em;
+    
+    h4 {
+        font-size: 20pt;
+        font-weight: 800;
     }
 }
 
@@ -176,7 +166,8 @@ header {
 }
 
 footer {
-    background-color: $color1;
+    background-color: $color2;
+    padding: 1em 0;
 }
 
 .footerContent {
