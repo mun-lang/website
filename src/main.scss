@@ -9,6 +9,10 @@ html, button, input, select, textarea,
   -webkit-font-smoothing: antialiased;
 }
 
+html {
+    min-width: 300px;
+}
+
 body {
   background-color: $color1;
 }
@@ -29,25 +33,41 @@ a:hover {
     padding: 0 1em;
 }
 
-.pitch {
-    font-size: 25pt;
+h1 {
+    font-size: 40pt;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20pt;
     font-weight: 200;
+}
+
+@media #{$sm-up} {
+    p {
+
+    }
+
+    h1 { font-size: 50pt; }
+    h2 { font-size: 50pt; }
+    h3 { font-size: 25pt; }
+}
+
+.pitch {
     max-width: 800px;
     margin: 0.5em auto;
 
-    @media #{$md-up} {
-        margin-top: 1.5em;
-    }
-
     h1 {
-        size: 2em;
-        font-weight: 700;
-        margin-bottom: 0.3em;
+        margin-bottom: 0.2em;
         margin-top: 0;
     }
 
-    strong {
-        font-weight: 300;
+    h3 {
+        margin-top: 0;
+    }
+
+    @media #{$md-up} {
+        margin-top: 1.5em;
     }
 }
 

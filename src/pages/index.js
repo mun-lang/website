@@ -23,12 +23,15 @@ function IndexPage() {
   return (
     <Layout >
       <SEO />
-      <section className="content">
-        <div className="pitch">
+      <div className="content">
+        <section className="pitch">
           <h1>Mun</h1>
-          {site.siteMetadata.tagline}
-        </div>
-      </section>
+          <h3>{site.siteMetadata.tagline}</h3>
+        </section>
+        <section>
+          <p>This is some random text</p>
+        </section>
+      </div>
     </Layout >
   );
 }
