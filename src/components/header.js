@@ -1,10 +1,7 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
 import "../styles/_hamburger.scss";
-
-const WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
 
 class Header extends React.Component {
   constructor(props) {
@@ -23,10 +20,10 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener(WINDOW_CHANGE_EVENT, this.hideMenu);
+    window.addEventListener('resize', this.hideMenu);
   }
   componentWillUnmount() {
-    window.removeEventListener(WINDOW_CHANGE_EVENT, this.hideMenu);
+    window.removeEventListener('resize', this.hideMenu);
   }
 
   render() {
