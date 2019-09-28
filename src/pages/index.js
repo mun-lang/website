@@ -37,19 +37,19 @@ function IndexPage() {
         </section>
         <section id="goals">
           <div className="content">
-            <h2>Goals<div className="highlight"></div></h2>
+            <h2>Pillars<div className="highlight"></div></h2>
             <div className="pure-g">
               <div className="pure-u-1 pure-u-md-1-3">
-                <h4>Productivity</h4>
-                <p>Mun is build around the principle of hot reloading, meaning that all code can be reloaded while your application is running.</p>
+                <h4>Hot Reloading</h4>
+                <p>Mun natively supports hot reloading - the process of changing code and resources while an app is running - on all target platforms and consoles with marginal runtime overhead, its runtime has useful error messages, and can easily be embedded into other languages.</p>
+              </div>
+              <div className="pure-u-1 pure-u-md-1-3">
+                <h4>Static Typing</h4>
+                <p>Mun's type system eliminates an entire class of runtime errors and provides powerful IDE integration with auto-completion and refactoring tools, allowing developers to focus on writing code.</p>
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
                 <h4>Performance</h4>
-                <p>All code is compiled to machine code instead of being interpreted or JIT compiled. This ensures that the processor can focus on running your code without any overhead of a virtual machine.</p>
-              </div>
-              <div className="pure-u-1 pure-u-md-1-3">
-                <h4>Ease of Use</h4>
-                <p>Mun syntax is designed to be user friendly for a wide variety of developers. The compiler has also been built to be able to provide you with always available code completion, allowing you to focus on writing code instead of reading.</p>
+                <p>Mun is compiled to machine code that can be natively executed on any target platform, guaranteeing the best possible runtime performance.</p>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ function IndexPage() {
             <ul>
               <li>contributing</li>
               <li>donating</li>
-              <li>staying up to date</li>
+              <li>updates</li>
             </ul>
           </div>
         </section>
