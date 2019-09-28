@@ -35,7 +35,7 @@ function IndexPage() {
             <h3>{site.siteMetadata.tagline}</h3>
           </div>
         </section>
-        <section id="goals">
+        <section id="pillars">
           <div className="content">
             <h2>Pillars<div className="highlight"></div></h2>
             <div className="pure-g">

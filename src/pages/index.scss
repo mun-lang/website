@@ -59,12 +59,12 @@
     }
 }
 
-#goals {
+#pillars {
     background-color: $color3;
     color: $color1;
     z-index: 200;
     position: relative;
-    padding: 2em 0 4em 0;
+    padding: 2em 0 6em 0;
 
     &::before {
         content: '';
