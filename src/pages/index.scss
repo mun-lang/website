@@ -101,6 +101,7 @@
     z-index: 200;
     position: relative;
     padding: 3.5em 0 4em 0;
+    background-color: $color1;
 
     &::before {
         content: '';
