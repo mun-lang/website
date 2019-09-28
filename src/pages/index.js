@@ -41,11 +41,11 @@ function IndexPage() {
             <div className="pure-g">
               <div className="pure-u-1 pure-u-md-1-3">
                 <h4>Hot Reloading</h4>
-                <p>Mun natively supports hot reloading - the process of changing code and resources while an app is running - on all target platforms and consoles with marginal runtime overhead, its runtime has useful error messages, and can easily be embedded into other languages.</p>
+                <p>Mun natively supports hot reloading - the process of changing code and resources while an app is running - on all target platforms and consoles with marginal runtime overhead. Its runtime has useful error messages, and can easily be embedded into other languages.</p>
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
                 <h4>Static Typing</h4>
-                <p>Mun's type system eliminates an entire class of runtime errors and provides powerful IDE integration with auto-completion and refactoring tools, allowing developers to focus on writing code.</p>
+                <p>Mun's type system eliminates an entire class of runtime errors and provides powerful IDE integration with auto-completion and refactoring tools allowing developers to focus on writing code.</p>
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
                 <h4>Performance</h4>
