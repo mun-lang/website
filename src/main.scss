@@ -2,6 +2,7 @@
 @import "./styles/grids-responsive-min.css";
 @import "./fonts/font.scss";
 @import "./styles/_variables.scss";
+@import "./styles/_code.css";
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
@@ -15,8 +16,9 @@ html {
 }
 
 body {
-  background-color: $color1;
+  background-color: $color2;
   color: $color2;
+  overflow-x: hidden;
 }
 
 a {
@@ -31,7 +33,7 @@ a:hover {
 .content, .footerContent {
     max-width: $content-max-width;
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 30px;
 }
 
 h1 {
@@ -69,7 +71,7 @@ h5 {
     h5 { font-size: 15pt; }
 }
 
-header {
+nav {
     background-color: $color1;
  //   margin-bottom: 1em;
     //height: 2.7em;
@@ -79,96 +81,98 @@ header {
     -ms-transition: box-shadow 0.4s;
     transition: box-shadow 0.4s;
 
-    max-width: 1200px;
-    margin: 0 auto;
+    > div {
+        max-width: 1200px;
+        margin: 0 auto;
 
-    &.open {
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);    
+        &.open {
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);    
 
-        @media (max-width: 47.999em) {
+            @media (max-width: 47.999em) {
 
-            .pure-menu {
+                .pure-menu {
+
+                    &.menu-contents {
+                        max-height: 1000px;
+                        opacity: 1;
+                    }
+        
+                    .pure-menu-list {      
+                        display: block;
+                        .pure-menu-heading {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .pure-menu {
+            .pure-menu-heading {
+                text-transform: none;
+            }
+
+            .pure-menu-link, .pure-menu-heading {
+                color: $color2;
+                font-size: 120%;
+            }
+
+            .pure-menu-link {
+                &:focus {
+                    background-color: inherit;
+                    outline: none;
+                }
+
+                &:hover {
+                    color: $color4;
+                    background-color: darken($color1, 4);
+                }
+            }
+
+            .pure-menu-list {
+                float: right;
+            }
+
+            @media (max-width: 47.999em) {
+
+                .pure-menu-list {
+                    float: none;
+                }
 
                 &.menu-contents {
-                    max-height: 1000px;
-                    opacity: 1;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.5s;
+                    opacity: 0;
+
+                    -webkit-transition: max-height 0.5s,opacity 0.5s;
+                    -moz-transition: max-height 0.5s,opacity 0.5s;
+                    -ms-transition: max-height 0.5s,opacity 0.5s;
+                    transition: max-height 0.5s,opacity 0.5s;
                 }
-    
-                .pure-menu-list {      
+
+                .pure-menu-list {
+                    width: 100%;
+                }
+
+                .pure-menu-item {
                     display: block;
-                    .pure-menu-heading {
-                        width: 100%;
-                    }
+                    text-align: left;
                 }
-
             }
 
-        }
-    }
-
-    .pure-menu {
-        .pure-menu-heading {
-            text-transform: none;
-        }
-
-        .pure-menu-link, .pure-menu-heading {
-            color: $color2;
-            font-size: 120%;
-        }
-
-        .pure-menu-link {
-            &:focus {
-                background-color: inherit;
-                outline: none;
+            .pure-menu-link.icon {
+                padding-left: 0.8em;
+                padding-right: 0.8em;
             }
 
-            &:hover {
-                color: $color4;
-                background-color: darken($color1, 4);
+            a:hover {
+                text-decoration: none;
             }
-        }
-
-        .pure-menu-list {
-            float: right;
-        }
-
-        @media (max-width: 47.999em) {
-
-            .pure-menu-list {
-                float: none;
-            }
-
-            &.menu-contents {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.5s;
-                opacity: 0;
-
-                -webkit-transition: max-height 0.5s,opacity 0.5s;
-                -moz-transition: max-height 0.5s,opacity 0.5s;
-                -ms-transition: max-height 0.5s,opacity 0.5s;
-                transition: max-height 0.5s,opacity 0.5s;
-            }
-
-            .pure-menu-list {
-                width: 100%;
-            }
-
-            .pure-menu-item {
-                display: block;
-                text-align: left;
-            }
-        }
-
-        .pure-menu-link.icon {
-            padding-left: 0.8em;
-            padding-right: 0.8em;
-        }
-
-        a:hover {
-            text-decoration: none;
         }
     }
 }
@@ -180,4 +184,38 @@ footer {
 
 .footerContent {
     color: lighten($color2, 50);
+}
+
+
+#home section, #blog header, #blog article {
+    h2 {
+        margin-bottom: 0em;
+        margin-left: -30px;
+        display: inline-block;
+        border-left: 8px solid $color4;
+        padding: 4px 0px 4px 22px;
+    } 
+}
+
+.gatsby-highlight {
+    position: relative;
+
+    > pre {
+        border-radius: 3px;
+        font-size: 11pt;
+    }
+}
+
+.gatsby-highlight[data-language]::before {
+    content: attr(data-language);
+    color: black;
+    background-color: #CFCFCF;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.9em;
+    border-radius: 0 0 0 5px;
+    padding: 0 0.5em;
+    text-shadow: none;
 }

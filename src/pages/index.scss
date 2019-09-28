@@ -1,23 +1,6 @@
 
 @import "../styles/variables";
 
-#home section {
-    h2 {
-        margin: 0.2em 0;
-        margin-left: -1em;
-        display: inline-block;
-        border-left: 8px solid $color4;
-        padding-left: calc(1em - 8px);
-        padding-top: 4px;
-        padding-bottom: 4px;
-
-        @media #{$md-up} {
-            margin-left: calc(-1em + 8px);
-            padding-left: calc(1em - 16px);
-        }
-    }
-}
-
 .pitch {
     background-color: $color1;
     color: $color2;
@@ -33,21 +16,12 @@
     }
 
     h1 {
-        margin-bottom: 0.2em;
-        margin-top: 0;
-
-        margin-left: -0.6em;
+        margin-bottom: 0em;
+        margin-left: -30px;
         display: inline-block;
         border-left: 8px solid $color4;
-        padding-left: calc(0.6em - 8px);
-        padding-top: 4px;
-        padding-bottom: 4px;
-
-        @media #{$md-up} {
-            margin-left: calc(-0.6em + 8px);
-            padding-left: calc(0.6em - 16px);
-        }
-    }
+        padding: 4px 0px 4px 22px;
+    } 
 
     h3 {
         margin-top: 0;

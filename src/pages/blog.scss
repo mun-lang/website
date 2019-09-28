@@ -1,0 +1,51 @@
+@import "../styles/variables";
+
+#blog {
+    padding-top: 3em;
+    background-color: $color1;
+
+    > header {
+        padding-bottom: 10em;
+    }
+
+    #posts {
+        color: $color1;
+        position: relative;
+        z-index: 200;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 225px;
+            width: 120%;
+            position: absolute;
+            left: 50%;
+            top: -100px;
+            background-color: $color3;
+            transform: translateX(-50%) rotate(2deg);
+            //-webkit-transform-origin: left top;
+            //-ms-transform-origin: center top;
+            transform-origin: center top;
+            z-index: -150;
+        }
+
+        .inner {
+            padding-bottom: 0em;
+            background-color: $color3;
+            border-collapse: collapse;
+            border-bottom: 1px solid transparent; // HACK
+        }
+
+        article {
+            transform: translateY(calc(-100px + 3em));            
+            margin-bottom: 2em;
+            header {
+                h4 {
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}

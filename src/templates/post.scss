@@ -1,0 +1,23 @@
+@import "../styles/variables";
+
+#post {
+    background-color: $color1;
+    display: block;
+    padding-bottom: 4em;
+
+    h1,h2 {
+        margin-bottom: 0em;
+        margin-left: -30px;
+        display: inline-block;
+        border-left: 8px solid $color4;
+        padding: 4px 0px 4px 22px;
+    }    
+
+    header {
+        p {
+            color: lighten($color2, 20);
+            margin-bottom: 2em;
+            margin-top: 0em;
+        }
+    }
+}
