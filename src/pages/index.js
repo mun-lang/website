@@ -31,41 +31,46 @@ function IndexPage() {
       <div id="home">
         <section className="pitch">
           <div className="content">
-            <h1>Mun</h1>
+            <h1>Mun<div className="highlight"></div></h1>
             <h3>{site.siteMetadata.tagline}</h3>
           </div>
         </section>
-        <section className="underconstruction">
-          <div className="content">
-            <h2>Under development</h2>
-            <p>Thank you for stumbling upon this page. We are working very hard on achieving all the goals listen on this page for Mun but currently the language and toolchain are under heavy development.</p>
-          </div>
-        </section>
-        <section className="info">
+        <section id="goals">
           <div className="content">
             <h2>Goals<div className="highlight"></div></h2>
             <div className="pure-g">
               <div className="pure-u-1 pure-u-md-1-3">
-                <h4>Hot-reloadable</h4>
-                <p>Mun is build around the principle of hot-reloading meaning that all code can be reloaded while your application is running.</p>
+                <h4>Productivity</h4>
+                <p>Mun is build around the principle of hot reloading, meaning that all code can be reloaded while your application is running.</p>
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
-                <h4>Efficient</h4>
+                <h4>Performance</h4>
                 <p>All code is compiled to machine code instead of being interpreted or JIT compiled. This ensures that the processor can focus on running your code without any overhead of a virtual machine.</p>
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
-                <h4>Developer friendly</h4>
-                <p>Mun syntax is designed to be user friendly for a wide variety of developers. The compiler has also been build to be able to provide you with always available code completion, allowing you to focus on writing code instead of reading.</p>
+                <h4>Ease of Use</h4>
+                <p>Mun syntax is designed to be user friendly for a wide variety of developers. The compiler has also been built to be able to provide you with always available code completion, allowing you to focus on writing code instead of reading.</p>
               </div>
             </div>
           </div>
         </section>
-        <section className="support">
+        <section id="under-construction">
+          <div className="content">
+            <h2>Work in Progress</h2>
+            <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are very much a work in progress. If that doesn't scare you, then you might be interested in:</h5>
+            <ul>
+              <li>contributing</li>
+              <li>donating</li>
+              <li>staying up to date</li>
+            </ul>
+          </div>
+        </section>
+        <section id="support">
           <div className="content">
             <h2>Support us</h2>
             <p>The Mun programming language is developed by a group of volunteers. We welcome recurring donations, which enable us to spend more time working on Mun.</p>
             <p>Mun is sponsored by the following companies:</p>
-            <div className="pure-g sponsors">
+            <div className="pure-g" id="sponsors">
               <div className="pure-u-1 pure-u-sm-1-2">
                 <NetlifyLogo />
               </div>

@@ -6,7 +6,7 @@ const Footer = () => (
             <div style={{
                 textAlign: "center"
             }}>
-                <small>This website is available on <a href="https://github.com/mun-lang/website">Github</a>, contributions are welcome.</small>
+                <small>This website is available on <a href="https://github.com/mun-lang/website">Github</a> and contributions are welcome.</small>
             </div>
         </div>
     </footer>
