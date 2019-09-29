@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 import "./index.scss"
 
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 
@@ -32,7 +32,7 @@ function IndexPage() {
         <section className="pitch">
           <div className="content">
             <h1>Mun<div className="highlight"></div></h1>
-            <h3>{site.siteMetadata.tagline}</h3>
+            <h3>A programming language empowering<br />creation through iteration.</h3>
           </div>
         </section>
         <section id="pillars">
@@ -71,10 +71,10 @@ function IndexPage() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               </div>
             </div>
-              <div className="pure-u-1 pure-u-md-1-3">
-                <h4>XR</h4>
-                <p>Embed Mun into AR / MR / VR apps to unleash the power of creation in an immersive environment.</p>
-              </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <h4>XR</h4>
+              <p>Embed Mun into AR / MR / VR apps to unleash the power of creation in an immersive environment.</p>
+            </div>
           </div>
         </section>
         <section id="under-construction">
@@ -82,20 +82,23 @@ function IndexPage() {
             <h2>Work in Progress</h2>
             <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are very much a work in progress. If that doesn't scare you, then you might be interested in:</h5>
             <ul>
-              <li>contributing</li>
-              <li>donating</li>
-              <li>updates</li>
+              <li><a href="https://github.com/mun-lang/mun">Contributing</a></li>
+              <li><Link to="/donate">Donating</Link></li>
+              <li>Updates</li>
             </ul>
           </div>
         </section>
-        <section id="support">
+        <section id="support" className="bg-light">
           <div className="content">
             <h2>Support us</h2>
             <p>The Mun programming language is developed by a group of volunteers. We welcome recurring donations, which enable us to spend more time working on Mun.</p>
-            <p>Mun is sponsored by the following companies:</p>
-            <div className="pure-g" id="sponsors">
-              <div className="pure-u-1 pure-u-sm-1-2">
-                <NetlifyLogo />
+            <Link to="donate" className="btn">Donate</Link>
+            <div style={{ marginTop: "2em" }}>
+              <p>Mun is sponsored by the following companies:</p>
+              <div className="pure-g" id="sponsors">
+                <div className="pure-u-1 pure-u-sm-1-2">
+                  <NetlifyLogo />
+                </div>
               </div>
             </div>
           </div>

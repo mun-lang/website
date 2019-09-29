@@ -2,6 +2,7 @@
 @import "./styles/grids-responsive-min.css";
 @import "./fonts/font.scss";
 @import "./styles/_variables.scss";
+@import "./styles/_button.scss";
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
@@ -30,6 +31,7 @@ a:hover {
 
 .content {
     max-width: $content-max-width;
+    width: 100%;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -226,4 +228,8 @@ main {
     border-radius: 0 0 0 5px;
     padding: 0 0.5em;
     text-shadow: none;
+}
+
+.bg-dark {
+    color: $color1;
 }

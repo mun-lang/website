@@ -1,0 +1,40 @@
+@import "./variables";
+
+a.btn {
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.4em 2em;
+    
+    &.btn-large {
+        display: block;
+        text-align: center;
+    }
+}
+
+.bg-dark {
+    a.btn {
+        background-color: $color4;
+        color: $color2;
+
+        &:hover {
+            color: lighten($color2, 10);
+            border-color: $color1;
+        }
+    }
+}
+
+.bg-light {
+    a.btn {
+        background-color: $color4;
+        color: $color2;
+
+        &:hover {
+            color: lighten($color2, 10);
+            border-color: $color2;
+        }
+    }
+}

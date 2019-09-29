@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://mun-lang.org",
     title: `Mun Programming Language`,
-    description: `Mun, an application programming language designed for developer productivity.`,
-    tagline: `An application programming language designed for developer productivity.`,
+    description: `Mun, a programming language empowering creation through iteration.`,
+    tagline: `A programming language empowering\n creation through iteration.`,
     author: `The Mun Development Team`,
   },
   plugins: [

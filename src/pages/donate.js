@@ -15,13 +15,11 @@ const DonatePage = () => (
                 <h5>Every contribution helps!</h5>
             </header>
             <section>
-                <div className="inner">
+                <div className="inner bg-dark">
                     <div className="content">
-                        {/* <p>The Mun Programming Language is developed by a group of volunteers. We welcome any and all contributions!</p>
-                        <ul>
-                            <li>Hiring part-time, full-time or contract developers to work on Mun</li>
-                        </ul> */}
-                        We are currently figuring out how to set up a donation system. We hope you check back.
+                        <p>The Mun Development Team is a group of software enthusiasts working on Mun in their spare time. We are grateful for any donations that will help us dedicate more time and resources towards building the Mun language and toolchain.</p>
+                        <p>We are in the process of setting up a processing platform for our donations. Until then, please feel free to contact us by email.</p>
+                        <a href="mailto:team@mun-lang.org" className="btn">Email the Mun Development Team</a>
                     </div>
                 </div>
             </section>
