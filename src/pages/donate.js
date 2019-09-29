@@ -12,7 +12,7 @@ const DonatePage = () => (
         <div id="donate">
             <header className="content">
                 <h2>We need your help</h2>
-                <h5>Every contribution helps!</h5>
+                <h5>Every contribution matters!</h5>
             </header>
             <section>
                 <div className="inner bg-dark">

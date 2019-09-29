@@ -3,8 +3,8 @@ module.exports = {
     siteUrl: "https://mun-lang.org",
     title: `Mun Programming Language`,
     description: `Mun, a programming language empowering creation through iteration.`,
-    tagline: `A programming language empowering\n creation through iteration.`,
     author: `The Mun Development Team`,
+    twitter: `wodannson`
   },
   plugins: [
     `gatsby-plugin-react-svg`,
@@ -58,7 +58,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
