@@ -2,7 +2,6 @@
 @import "./styles/grids-responsive-min.css";
 @import "./fonts/font.scss";
 @import "./styles/_variables.scss";
-@import "./styles/_code.css";
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
@@ -204,6 +203,8 @@ footer {
         border-radius: 3px;
         font-size: 11pt;
     }
+
+    @import "./styles/_code.css";
 }
 
 .gatsby-highlight[data-language]::before {
