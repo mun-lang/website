@@ -49,7 +49,7 @@ function IndexPage() {
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
                 <h4>Performance</h4>
-                <p>Mun is compiled to machine code that can be natively executed on any target platform, guaranteeing the best possible runtime performance.</p>
+                <p>Mun uses LLVM to compile to machine code that can be natively executed on any target platform, guaranteeing the best possible runtime performance.</p>
               </div>
             </div>
           </div>
