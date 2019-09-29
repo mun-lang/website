@@ -54,6 +54,29 @@ function IndexPage() {
             </div>
           </div>
         </section>
+        <section id="target-audience">
+          <div className="content">
+            <h2>Made for Creators<div className="highlight"></div></h2>
+            <div className="pure-g">
+              <div className="pure-u-1 pure-u-md-1-3">
+                <h4>Games</h4>
+                <p>Quickly iterate designs using Mun's hot reloading capabilities, without compromising performance.</p>
+              </div>
+              <div className="pure-u-1 pure-u-md-1-3">
+                <h4>Mobile &amp; Console</h4>
+                <p>Mun leverages cross compilation to unlock hot reloading for console and mobile development.</p>
+              </div>
+              <div className="pure-u-1 pure-u-md-1-3">
+                <h4>Robotics</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+              <div className="pure-u-1 pure-u-md-1-3">
+                <h4>XR</h4>
+                <p>Embed Mun into AR / MR / VR apps to unleash the power of creation in an immersive environment.</p>
+              </div>
+          </div>
+        </section>
         <section id="under-construction">
           <div className="content">
             <h2>Work in Progress</h2>
