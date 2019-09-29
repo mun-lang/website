@@ -94,8 +94,12 @@ $fa-font-display: fallback;
          url('#{$fa-font-path}/fa-brands-400.woff') format('woff')
     //     url('#{$fa-font-path}/fa-brands-400.ttf') format('truetype'),
     //     url('#{$fa-font-path}/fa-brands-400.svg#fontawesome') format('svg');
-  }
+}
 
-  .fab {
-      font-family: 'Font Awesome 5 Brands';
-  }
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+}
+
+.fa-discord:before { content: "\f392"; }
+.fa-github:before { content: "\f09b"; }

@@ -1,27 +1,26 @@
 @import "../styles/variables";
 
-#blog {
+#donate {
     padding-top: 3em;
-    background-color: $color1;
 
     > header {
-        padding-bottom: 10em;
+        padding-bottom: 6em;
     }
 
+    h2 {
+        margin-bottom: 0;
+        margin-left: -30px;
+        display: inline-block;
+        border-left: 8px solid $color4;
+        padding: 4px 0px 4px 22px;
+    } 
+
     .content {
+        font-size: 13pt;
         min-height: 10em;
     }
 
-    a {
-        color: $color4;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    #posts {
+    section {
         color: $color1;
         position: relative;
         z-index: 200;
@@ -35,7 +34,7 @@
             left: 50%;
             top: -100px;
             background-color: $color3;
-            transform: translateX(-50%) rotate(2deg);
+            transform: translateX(-50%) rotate(-1deg);
             //-webkit-transform-origin: left top;
             //-ms-transform-origin: center top;
             transform-origin: center top;
@@ -49,14 +48,12 @@
             border-bottom: 1px solid transparent; // HACK
         }
 
-        article {
+        .content {
             transform: translateY(calc(-100px + 3em));            
             margin-bottom: 2em;
-            header {
-                h4 {
-                    margin-bottom: 0;
-                    margin-top: 0;
-                }
+
+            p, ul {
+                margin-bottom: 1.5em;
             }
         }
     }

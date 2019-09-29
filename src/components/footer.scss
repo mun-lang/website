@@ -1,0 +1,52 @@
+@import "../styles/variables";
+
+#footer {
+    color: $color1;
+    background-color: $color2;
+    padding-bottom: 1em;
+
+    a {
+        color: $color4;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .content {
+        margin-top: 0;
+    }    
+
+    #sitemap {
+        a {
+            line-height: 2em;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    #social {
+        font-size: 30pt;
+
+        a {
+            color: $color1;
+            margin-right: 0.4em;
+            line-height: 1em;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    small {
+        color: lighten($color2, 50);
+    }
+}

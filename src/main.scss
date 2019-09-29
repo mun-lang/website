@@ -21,15 +21,14 @@ body {
 }
 
 a {
-  color: $color4;
-  text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: none;
 }
 
-.content, .footerContent {
+.content {
     max-width: $content-max-width;
     margin: 0 auto;
     padding: 0 30px;
@@ -55,6 +54,12 @@ h5 {
     font-weight: 400;
 }
 
+h6 {
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
 @media #{$md-up} {
     h1 { font-size: 50pt; }
 
@@ -68,6 +73,7 @@ h5 {
     }
 
     h5 { font-size: 15pt; }
+    h6 { font-size: 15pt; }
 }
 
 nav {
@@ -79,6 +85,7 @@ nav {
     -moz-transition: box-shadow 0.4s;
     -ms-transition: box-shadow 0.4s;
     transition: box-shadow 0.4s;
+    z-index: 500;
 
     > div {
         max-width: 1200px;
@@ -176,15 +183,15 @@ nav {
     }
 }
 
-footer {
-    background-color: $color2;
-    padding: 1em 0;
+.emptyContent {
+    background-color: $color1;
+    padding: 2em 0em 8em 0em;
 }
 
-.footerContent {
-    color: lighten($color2, 50);
+main {
+    background-color: $color1;
+    border-top: 1px solid transparent; // HACK
 }
-
 
 #home section, #blog header, #blog article {
     h2 {

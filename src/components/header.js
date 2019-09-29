@@ -48,13 +48,13 @@ class Header extends React.Component {
                 <a className="pure-menu-link" href="https://docs.mun-lang.org">Documentation</a>
               </li>
               <li className="pure-menu-item">
-                <Link className="pure-menu-link" to="/">Donate</Link>
+                <Link className="pure-menu-link" to="/donate">Donate</Link>
               </li>
               <li className="pure-menu-item">
-                <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun"><span className="fab"></span></a>
+                <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun"><i className="fab fa-github"></i></a>
               </li>
               <li className="pure-menu-item">
-                <a className="pure-menu-link icon" href="https://discord.gg/SfvvcCU"><span className="fab"></span></a>
+                <a className="pure-menu-link icon" href="https://discord.gg/SfvvcCU"><i className="fab fa-discord"></i></a>
               </li>
             </ul>
           </div>
