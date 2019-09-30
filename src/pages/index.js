@@ -72,6 +72,10 @@ function IndexPage() {
               </div>
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
+              <h4>WebAssembly</h4>
+              <p>Use the same Mun toolchain to build, test, and deploy content to the web using WebAssembly modules.</p>
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
               <h4>XR</h4>
               <p>Embed Mun into AR / MR / VR apps to unleash the power of creation in an immersive environment.</p>
             </div>
