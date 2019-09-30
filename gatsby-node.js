@@ -15,6 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `
         {
           allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/\\/content\\/posts\\/.+$/"}}
             sort: { fields: [fields___date], order: DESC }
             limit: 1000
           ) {
@@ -61,20 +62,39 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-    const pathRegex = /^\/(\d{4})-(\d{1,2})-(\d{1,2})-(.*)\/$/
-    const matches = pathRegex.exec(value)
-    const url = matches ? `/blog/${matches[1]}/${matches[2]}/${matches[3]}/${matches[4]}/` : value
+
+    const categoryRegex = /\/(.+)\/(.+)$/
+    const matches = categoryRegex.exec(value)
+    const { date, url } = getDateAndUrl(matches[1], matches[2])
+
     createNodeField({
       node,
       name: `url`,
       value: url,
     })
 
-    let date = matches ? new Date(Date.UTC(parseInt(matches[1]), parseInt(matches[2]) - 1, parseInt(matches[3]))) : new Date()
     createNodeField({
       node,
       name: `date`,
       value: date,
     })
+  }
+}
+
+function getDateAndUrl(category, path) {
+  switch (category) {
+    case `posts`:
+        const pathRegex = /(\d{4})-(\d{1,2})-(\d{1,2})-(.*)\/$/
+        const matches = pathRegex.exec(path)
+        return {
+          date: matches ? new Date(Date.UTC(parseInt(matches[1]), parseInt(matches[2]) - 1, parseInt(matches[3]))) : new Date(),
+          url:  matches ? `/blog/${matches[1]}/${matches[2]}/${matches[3]}/${matches[4]}/` : path,
+        }
+
+      default:
+        return {
+          date: new Date(),
+          url: path,
+        } 
   }
 }

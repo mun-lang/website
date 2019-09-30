@@ -10,7 +10,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 
 function IndexPage() {
-  const { site } = useStaticQuery(
+  const { site, markdownRemark  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -20,6 +20,11 @@ function IndexPage() {
             author
             twitter
           }
+        }
+        markdownRemark(
+          fileAbsolutePath: {regex: "/\\/examples\\/syntax.md$/"}
+        ) {
+          html
         }
       }
     `
@@ -88,6 +93,14 @@ function IndexPage() {
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank">Contributing</a>
             <Link className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} to="/donate">Donating</Link>
             <a className="btn" href={`https://twitter.com/${site.siteMetadata.twitter}`} target="_blank"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
+          </div>
+        </section>
+        <section id="syntax" className="bg-light">
+          <div className="content">
+            <h2>Syntax</h2>
+            <p>The driving force behind the development of Mun is natively supported hot reloading for functions and data. As such, the language and its syntax will keep growing at the rate in which we add hot reloading-supported semantics.</p>
+            <p>We take inspiration from a scala of application, scripting, and systems programming languages, but we also want the community's input in defining a syntax that you find comfortable to use. We will regularly tweet proposals for new syntax, so make sure to <a href={`https://twitter.com/${site.siteMetadata.twitter}`}>follow us</a>.</p>
+            <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }}></div>
           </div>
         </section>
         <section id="support" className="bg-light">
