@@ -47,7 +47,10 @@ class BlogIndex extends React.Component {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
+    allMarkdownRemark(
+        filter: {fileAbsolutePath: {regex: "/\\/content\\/posts\\/.+$/"}}
+        sort: { fields: [fields___date], order: DESC }
+      ) {
       edges {
         node {
           excerpt

@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts`,
+        name: `content`,
+        path: `${__dirname}/content`,
       },
     },
     {
@@ -40,7 +40,29 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              languageExtensions: [
+                {
+                  language: "mun",
+                  definition: {
+                    comment: {
+                      pattern: /(^|[^\\:])\/\/.*/,
+                      lookbehind: true,
+                      greedy: true
+                    },
+                    boolean: /\b(?:true|false)\b/,
+                    function: /\w+(?=\()/,
+                    keyword: /\b(?:bool|float|fn|int|let)\b/,
+                    number: /\b(?:0x[\dA-Fa-f](?:_?[\dA-Fa-f])*|0o[0-7](?:_?[0-7])*|0b[01](?:_?[01])*|(\d(?:_?\d)*)?\.?\d(?:_?\d)*(?:[Ee][+-]?\d+)?)(?:_?(?:[iu](?:8|16|32|64)?|f32|f64))?\b/,
+                    operator: /[-+*\/=]=?/,
+                    punctuation: /\.{1,3}|[{}[\];(),:]/,
+                  }
+                }
+              ]
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-slug`,
@@ -94,6 +116,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
+                  filter: {fileAbsolutePath: {regex: "/\\/content\\/posts\\/.+$/"}}
                   sort: { order: DESC, fields: [fields___date] },
                 ) {
                   edges {

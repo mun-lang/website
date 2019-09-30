@@ -37,7 +37,7 @@
     color: $color1;
     z-index: 200;
     position: relative;
-    padding: 2em 0 6em 0;
+    padding: 1.5em 0 4em 0;
 
     &::before {
         content: '';
@@ -116,9 +116,7 @@
     color: $color1;
     position: relative;
     z-index: 200;
-    padding: 1em 0 4em 0;
-    // padding-bottom: 5em;
-    // padding-top: 0em;
+    padding: 1.5em 0 4em 0;
     
     &::before {
         content: '';
@@ -137,10 +135,10 @@
     }
 }
 
-#support {
+#syntax {
     z-index: 200;
     position: relative;
-    padding: 1em 0 4em 0;
+    padding: 1.5em 0 0 0;
     background-color: $color1;
 
     &::before {
@@ -158,6 +156,13 @@
         transform-origin: left top;
         z-index: -150;
     }
+}
+
+#support {
+    z-index: 200;
+    position: relative;
+    padding: 1.5em 0 4em 0;
+    background-color: $color1;
 
     #sponsors > div {
         padding: 40px;
