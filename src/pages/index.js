@@ -37,7 +37,7 @@ function IndexPage() {
         <section className="pitch">
           <div className="content">
             <h1>Mun<div className="highlight"></div></h1>
-            <h3>A programming language empowering<br />creation through iteration.</h3>
+            <h3>A programming language empowering creation through iteration.</h3>
           </div>
         </section>
         <section id="pillars">
