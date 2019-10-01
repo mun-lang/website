@@ -55,25 +55,30 @@ class Header extends React.Component {
               <li className="pure-menu-item">
                 <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank"><i className="fab fa-github"></i></a>
               </li>
-              <li className="pure-menu-item">
-                <a className="pure-menu-link icon" href="https://discord.gg/SfvvcCU" target="_blank"><i className="fab fa-discord"></i></a>
-              </li>
-              <li className="pure-menu-item">
-                <StaticQuery
+              <StaticQuery
                   query={
                     graphql`
                       query {
                         site {
                           siteMetadata {
                             twitter
+                            discord
                           }
                         }
                       }
                     `
                   }
-                  render={({ site }) => (<a className="pure-menu-link icon" href={`https://twitter.com/${site.siteMetadata.twitter}`} target="_blank"><i className="fab fa-twitter"></i></a>)}
+                  render={({ site }) => (
+                    <>
+                    <li className="pure-menu-item">
+                      <a className="pure-menu-link icon" href={site.siteMetadata.discord} target="_blank"><i className="fab fa-discord"></i></a>
+                    </li>
+                    <li className="pure-menu-item">
+                      <a className="pure-menu-link icon" href={site.siteMetadata.twitter} target="_blank"><i className="fab fa-twitter"></i></a>
+                    </li>
+                    </>
+                  )}
                 />
-              </li>
             </ul>
           </div>
         </div>

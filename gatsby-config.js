@@ -4,7 +4,8 @@ module.exports = {
     title: `Mun Programming Language`,
     description: `Mun, a programming language empowering creation through iteration.`,
     author: `The Mun Development Team`,
-    twitter: `wodannson`
+    twitter: `https://twitter.com/wodannson`,
+    discord: `https://discord.gg/SfvvcCU`
   },
   plugins: [
     `gatsby-plugin-react-svg`,
