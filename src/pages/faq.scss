@@ -1,0 +1,67 @@
+@import "../styles/variables";
+
+#faq {
+    padding-top: 3em;
+
+    > header {
+        padding-bottom: 5em;
+    }
+
+    h2 {
+        margin-left: -30px;
+        display: inline-block;
+        border-left: 8px solid $color4;
+        padding: 4px 0px 4px 22px;
+    } 
+
+    .content {
+        min-height: 10em;
+    }
+
+    section {
+        color: $color1;
+        position: relative;
+        z-index: 200;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 225px;
+            width: 120%;
+            position: absolute;
+            left: 50%;
+            top: -100px;
+            background-color: $color3;
+            transform: translateX(-50%) rotate(-2deg);
+            //-webkit-transform-origin: left top;
+            //-ms-transform-origin: center top;
+            transform-origin: center top;
+            z-index: -150;
+        }
+
+        .inner {
+            padding-bottom: 0em;
+            background-color: $color3;
+            border-collapse: collapse;
+            border-bottom: 1px solid transparent; // HACK
+        }
+
+        .content {
+            transform: translateY(calc(-100px + 3em));       
+            h4 {
+                margin: 0.5em 0;
+                margin-top: 1em;
+            }
+                 
+            p {
+                color: darken($color1, 13);
+                margin-bottom: 1.5em;
+            }
+
+            a.fab {
+                text-decoration: none;
+            }
+        }
+    }
+
+}

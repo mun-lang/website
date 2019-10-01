@@ -31,8 +31,9 @@ const Footer = () => {
                     <div class="pure-u-1 pure-u-md-1-3">
                         <h6>Support</h6>
                         <ul>
-                            <li><Link to="/donate">Donate</Link></li>
                             <li><a href="mailto:team@mun-lang.org">Contact Us</a></li>
+                            <li><Link to="/donate">Donate</Link></li>
+                            <li><Link to="/faq">FAQ</Link></li>
                         </ul>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-3" id="social">
