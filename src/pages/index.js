@@ -19,6 +19,7 @@ function IndexPage() {
             description
             author
             twitter
+            openCollective
           }
         }
         markdownRemark(
@@ -91,7 +92,7 @@ function IndexPage() {
             <h2>Work in Progress</h2>
             <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are very much a work in progress. If that doesn't scare you, then you might be interested in:</h5>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank">Contributing</a>
-            <Link className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} to="/donate">Donating</Link>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank">Donating</a>
             <a className="btn" href={site.siteMetadata.twitter} target="_blank"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
           </div>
         </section>
@@ -107,7 +108,7 @@ function IndexPage() {
           <div className="content">
             <h2>Support us</h2>
             <p>The Mun programming language is developed by a group of volunteers. We welcome donations, which enable us to spend more time working on Mun.</p>
-            <Link to="donate" className="btn">Donate</Link>
+            <a className="btn" href={site.siteMetadata.openCollective} target="_blank">Donate</a>
             <div style={{ marginTop: "2em" }}>
               <p>Mun is sponsored by the following companies:</p>
               <div className="pure-g" id="sponsors">
