@@ -33,22 +33,22 @@ const Footer = () => {
                         <h6>Support</h6>
                         <ul>
                             <li><a href="mailto:team@mun-lang.org">Contact Us</a></li>
-                            <li><a href={site.siteMetadata.openCollective} target="_blank">Donate</a></li>
+                            <li><a href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donate</a></li>
                             <li><Link to="/faq">FAQ</Link></li>
                         </ul>
                     </div>
                     <div class="pure-u-1 pure-u-md-1-3" id="social">
                         <h6>Social</h6>
-                        <a href="https://github.com/mun-lang/mun" target="_blank"><i className="fab fa-github"></i></a>
-                        <a href={site.siteMetadata.discord} target="_blank"><i className="fab fa-discord"></i></a>
-                        <a href={site.siteMetadata.twitter} target="_blank"><i className="fab fa-twitter"></i></a>
+                        <a href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                        <a href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
+                        <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div style={{
                     textAlign: "center",
                     marginTop: "1.5em"
                 }}>
-                    <small>This website is available on <a href="https://github.com/mun-lang/website" target="_blank">Github</a> and contributions are welcome.</small>
+                    <small>This website is available on <a href="https://github.com/mun-lang/website" target="_blank" rel="noopener noreferrer">Github</a> and contributions are welcome.</small>
                 </div>
             </div>
         </footer >

@@ -44,7 +44,7 @@ const FAQPage = () => {
                 <p>At present, there are no IDE integrations for Mun that we know of.</p>
 
                 <h4>Other questions?</h4>
-                <p>If your question hasn't been answered, feel free to reach out to us on <a className="fab" href={site.siteMetadata.twitter} target="_blank"><i className="fab fa-twitter"></i></a> or <a href={site.siteMetadata.discord} className="fab" target="_blank"><i className="fab fa-discord"></i></a></p>
+                <p>If your question hasn't been answered, feel free to reach out to us on <a className="fab" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a> or <a href={site.siteMetadata.discord} className="fab" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a></p>
               </div>
             </div>
           </section>
