@@ -63,19 +63,19 @@ class Header extends React.Component {
                   render={({ site }) => (
                     <>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link" href={site.siteMetadata.openCollective} target="_blank">Donate</a>
+                      <a className="pure-menu-link" href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donate</a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link" href="https://trello.com/b/ZcMiREnC/mun-roadmap" target="_blank">Roadmap</a>
+                      <a className="pure-menu-link" href="https://trello.com/b/ZcMiREnC/mun-roadmap" target="_blank" rel="noopener noreferrer">Roadmap</a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank"><i className="fab fa-github"></i></a>
+                      <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link icon" href={site.siteMetadata.discord} target="_blank"><i className="fab fa-discord"></i></a>
+                      <a className="pure-menu-link icon" href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link icon" href={site.siteMetadata.twitter} target="_blank"><i className="fab fa-twitter"></i></a>
+                      <a className="pure-menu-link icon" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
                     </li>
                     </>
                   )}
