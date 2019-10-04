@@ -11,6 +11,7 @@ const Footer = () => {
               siteMetadata {
                 twitter
                 discord
+                openCollective
               }
             }
           }
@@ -32,7 +33,7 @@ const Footer = () => {
                         <h6>Support</h6>
                         <ul>
                             <li><a href="mailto:team@mun-lang.org">Contact Us</a></li>
-                            <li><Link to="/donate">Donate</Link></li>
+                            <li><a href={site.siteMetadata.openCollective} target="_blank">Donate</a></li>
                             <li><Link to="/faq">FAQ</Link></li>
                         </ul>
                     </div>
