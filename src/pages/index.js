@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 import "./index.scss"
 
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 
