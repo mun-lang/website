@@ -7,6 +7,7 @@ import "./index.scss"
 
 import { useStaticQuery, graphql } from "gatsby"
 
+import AmethystLogo from "../images/amethyst-logo-standard.svg"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 
 function IndexPage() {
@@ -112,7 +113,10 @@ function IndexPage() {
             <div style={{ marginTop: "2em" }}>
               <p>Mun is sponsored by the following companies:</p>
               <div className="pure-g" id="sponsors">
-                <div className="pure-u-1 pure-u-sm-1-2">
+                <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+                  <a href="https://amethyst.rs/" target="_blank" rel="noopener noreferrer"><AmethystLogo style={{ width: "100px" }} /></a>
+                </div>
+                <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
                   <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"><NetlifyLogo /></a>
                 </div>
               </div>
