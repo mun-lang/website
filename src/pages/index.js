@@ -9,6 +9,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import AmethystLogo from "../images/amethyst-logo-standard.svg"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
+import Warning from "../images/warning.svg"
 
 function IndexPage() {
   const { site, markdownRemark  } = useStaticQuery(
@@ -45,7 +46,7 @@ function IndexPage() {
         </section>
         <section id="under-construction">
           <div className="content bg-dark">
-            <h2>Work in Progress</h2>
+            <h2><Warning className="warning-icon"/>&nbsp;Work in Progress&nbsp;<Warning  className="warning-icon"/></h2>
             <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are still in the early stages of development and nowhere near production-ready. If that doesn't scare you, then please continue reading.</h5>
           </div>
         </section>
@@ -115,7 +116,7 @@ function IndexPage() {
           <div className="content">
             <h2>Support us</h2>
             <p>The Mun programming language is developed by a group of volunteers. To further advance the project, we welcome any and all:</p>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer">Contributions</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contributions</a>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donations</a>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> &nbsp; Feedback</a>
             <a className="btn" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
@@ -123,10 +124,10 @@ function IndexPage() {
               <p>Mun is sponsored by the following companies:</p>
               <div className="pure-g" id="sponsors">
                 <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-                  <a href="https://amethyst.rs/" target="_blank" rel="noopener noreferrer"><AmethystLogo style={{ width: "100px" }} /></a>
+                  <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"><NetlifyLogo /></a>
                 </div>
                 <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-                  <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"><NetlifyLogo /></a>
+                  <a href="https://amethyst.rs/" target="_blank" rel="noopener noreferrer"><AmethystLogo style={{ width: "100px" }} /></a>
                 </div>
               </div>
             </div>
