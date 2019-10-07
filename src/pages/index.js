@@ -20,6 +20,7 @@ function IndexPage() {
             description
             author
             twitter
+            discord
             openCollective
           }
         }
@@ -40,6 +41,20 @@ function IndexPage() {
           <div className="content">
             <h1>Mun<div className="highlight"></div></h1>
             <h3>A programming language empowering creation through iteration.</h3>
+          </div>
+        </section>
+        <section id="under-construction">
+          <div className="content bg-dark">
+            <h2>Work in Progress</h2>
+            <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are still in the early stages of development and nowhere near production-ready. If that doesn't scare you, then please continue reading.</h5>
+          </div>
+        </section>
+        <section id="mission" className="bg-light">
+          <div className="content">
+            <h2>Mission</h2>
+            <p>The idea to create Mun originated out of frustration with the Lua dynamic scripting language that is extensively used for game development at Abbey Games.</p>
+            <p>Lua's hot reloading capabilities and LuaJIT's performance make it a great language for rapid prototyping of real-time applications - such as games - on PC. However, the language has performance issues on some mobile and console platforms - to which LuaJIT cannot deploy, the language lacks refactoring functionality, and does not scale well with modern technology.</p>
+            <p>Mun tries to take the best of both worlds to create a more robust, highly iterative, productive, and performant programming language.</p>
           </div>
         </section>
         <section id="pillars">
@@ -88,28 +103,22 @@ function IndexPage() {
             </div>
           </div>
         </section>
-        <section id="under-construction">
-          <div className="content bg-dark">
-            <h2>Work in Progress</h2>
-            <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are very much a work in progress. If that doesn't scare you, then you might be interested in:</h5>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer">Contributing</a>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donating</a>
-            <a className="btn" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
-          </div>
-        </section>
-        <section id="syntax" className="bg-light">
+        <section id="syntax">
           <div className="content">
             <h2>Syntax</h2>
             <p>The driving force behind the development of Mun is natively supported hot reloading for functions and data. As such, the language and its syntax will keep growing at the rate in which we add hot reloading-supported semantics.</p>
-            <p>We take inspiration from a scala of application, scripting, and systems programming languages, but we also want the community's input in defining a syntax that you find comfortable to use. We will regularly tweet proposals for new syntax, so make sure to <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer">follow us</a>.</p>
+            <p>We take inspiration from a range of application, scripting, and systems programming languages, but we also want the community's input in defining a syntax that you find comfortable to use. We will regularly tweet proposals for new syntax, so make sure to <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer">follow us</a>.</p>
             <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }}></div>
           </div>
         </section>
         <section id="support" className="bg-light">
           <div className="content">
             <h2>Support us</h2>
-            <p>The Mun programming language is developed by a group of volunteers. We welcome donations, which enable us to spend more time working on Mun.</p>
-            <a className="btn" href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donate</a>
+            <p>The Mun programming language is developed by a group of volunteers. To further advance the project, we welcome any and all:</p>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer">Contributions</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donations</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> &nbsp; Feedback</a>
+            <a className="btn" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
             <div style={{ marginTop: "2em" }}>
               <p>Mun is sponsored by the following companies:</p>
               <div className="pure-g" id="sponsors">

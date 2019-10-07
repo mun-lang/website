@@ -33,6 +33,51 @@
     }
 }
 
+#under-construction {
+    background-color: $color5;
+    color: $color1;
+    position: relative;
+    z-index: 200;
+    padding: 1.5em 0 4em 0;
+    
+    &::before {
+        content: '';
+        display: block;
+        height: 225px;
+        width: 120%;
+        position: absolute;
+        top: 0;
+        background-color: $color5;
+        transform: rotate(-3deg);
+        transform-origin: left top;
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        z-index: -150;
+    }
+}
+
+#mission {
+    z-index: 200;
+    position: relative;
+    padding: 1.5em 0 6em 0;
+    background-color: $color1;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 225px;
+        width: 120%;
+        position: absolute;
+        top: 0;
+        background-color: $color1;
+        transform: rotate(-0.2deg);
+        transform-origin: left top;
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        z-index: -150;
+    }
+}
+
 #pillars {
     background-color: $color3;
     color: $color1;
@@ -46,13 +91,12 @@
         height: 225px;
         width: 120%;
         position: absolute;
-        left: 0;
         top: 0;
         background-color: $color3;
         transform: rotate(-3deg);
-        //-webkit-transform-origin: left top;
-        //-ms-transform-origin: center top;
         transform-origin: left top;
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
         z-index: -150;
     }
 
@@ -89,9 +133,9 @@
         top: 0;
         background-color: $color1;
         transform: rotate(-0.2deg);
+        transform-origin: left top;
         -webkit-transform-origin: left top;
         -ms-transform-origin: left top;
-        transform-origin: left top;
         z-index: -150;
     }
 
@@ -112,49 +156,25 @@
     }
 }
 
-#under-construction {
+#syntax {
     background-color: $color5;
     color: $color1;
     position: relative;
     z-index: 200;
     padding: 1.5em 0 4em 0;
-    
+
     &::before {
         content: '';
         display: block;
         height: 225px;
         width: 120%;
         position: absolute;
-        left: 0;
         top: 0;
         background-color: $color5;
         transform: rotate(-3deg);
-        //-webkit-transform-origin: left top;
-        //-ms-transform-origin: center top;
         transform-origin: left top;
-        z-index: -150;
-    }
-}
-
-#syntax {
-    z-index: 200;
-    position: relative;
-    padding: 1.5em 0 0 0;
-    background-color: $color1;
-
-    &::before {
-        content: '';
-        display: block;
-        height: 225px;
-        width: 120%;
-        position: absolute;
-//        left: 50%;
-        top: 0;
-        background-color: $color1;
-        transform: rotate(-0.2deg);
-        //-webkit-transform-origin: left top;
-        //-ms-transform-origin: center top;
-        transform-origin: left top;
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
         z-index: -150;
     }
 }
@@ -164,6 +184,21 @@
     position: relative;
     padding: 1.5em 0 4em 0;
     background-color: $color1;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 225px;
+        width: 120%;
+        position: absolute;
+        top: 0;
+        background-color: $color1;
+        transform: rotate(-0.2deg);
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        transform-origin: left top;
+        z-index: -150;
+    }
 
     #sponsors > div {
         box-sizing: border-box;
