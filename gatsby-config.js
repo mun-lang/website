@@ -4,7 +4,7 @@ module.exports = {
     title: `Mun Programming Language`,
     description: `Mun, a programming language empowering creation through iteration.`,
     author: `The Mun Development Team`,
-    twitter: `https://twitter.com/wodannson`,
+    twitter: `https://twitter.com/munlangorg`,
     discord: `https://discord.gg/SfvvcCU`,
     openCollective: `https://opencollective.com/mun`
   },
