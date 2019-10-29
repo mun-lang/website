@@ -6,8 +6,8 @@
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-  font-family: $font;
-  -webkit-font-smoothing: antialiased;
+    font-family: $font;
+    -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -27,6 +27,10 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+p, li {
+    line-height: 1.42rem;
 }
 
 .content {

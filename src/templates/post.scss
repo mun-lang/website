@@ -5,10 +5,17 @@
     display: block;
     padding-bottom: 4em;
 
+    h3,h4,h5,h6 {
+        border-bottom: 1px solid lighten($color2, 80);
+        line-height: 1.5em;
+        margin: 1.3em -20px 0.6em -20px;
+        padding: 0 20px;
+    }
+
     h1,h2 {
         margin-bottom: 0em;
         margin-left: -30px;
-        display: inline-block;
+        display: block;
         border-left: 8px solid $color4;
         padding: 4px 0px 4px 22px;
     }    
