@@ -5,14 +5,14 @@ import SEO from "../components/seo"
 
 import "./index.scss"
 
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import AmethystLogo from "../images/amethyst-logo-standard.svg"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 import Warning from "../images/warning.svg"
 
 function IndexPage() {
-  const { site, markdownRemark  } = useStaticQuery(
+  const { site, markdownRemark, allMarkdownRemark  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -30,9 +30,31 @@ function IndexPage() {
         ) {
           html
         }
+        allMarkdownRemark(
+            filter: {fileAbsolutePath: {regex: "/\\/content\\/posts\\/.+$/"}}
+            sort: { fields: [fields___date], order: DESC }
+            limit: 2
+          ) {
+          edges {
+            node {
+              excerpt
+              fields {
+                url
+                date(formatString: "MMMM DD, YYYY")
+              }
+              frontmatter {
+                title
+                excerpt
+                author
+              }
+            }
+          }
+        }
       }
     `
   )
+
+  const posts = allMarkdownRemark.edges
 
   return (
     <Layout >
@@ -110,6 +132,30 @@ function IndexPage() {
             <p>The driving force behind the development of Mun is natively supported hot reloading for functions and data. As such, the language and its syntax will keep growing at the rate in which we add hot reloading-supported semantics.</p>
             <p>We take inspiration from a range of application, scripting, and systems programming languages, but we also want the community's input in defining a syntax that you find comfortable to use. We will regularly tweet proposals for new syntax, so make sure to <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer">follow us</a>.</p>
             <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }}></div>
+          </div>
+        </section>
+        <section id="recent-posts" class="bg-light">
+          <div className="content">
+            <h2>Recent blog posts</h2>
+            <div className="pure-g">
+            {posts.map(({ node }) => {
+                  const title = node.frontmatter.title || node.fields.slug
+                  return (
+                    <div className="pure-u-1 pure-u-md-1-2">
+                      <article>
+                        <header>
+                          <h5><Link to={node.fields.url}>{title}</Link></h5>
+                          <small>{node.fields.date}, {node.frontmatter.author || "The Mun Team"}</small>
+                        </header>
+                        <section>
+                          <p dangerouslySetInnerHTML={{ __html: node.frontmatter.excerpt || node.excerpt }} />
+                        </section>
+                      </article>
+                    </div>
+                  )
+                })}
+            </div>
+            <Link className="btn" to="/blog" id="all-posts">All posts</Link>
           </div>
         </section>
         <section id="support" className="bg-light">
