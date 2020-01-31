@@ -1,3 +1,7 @@
+// HACK: Mun is by default no added from highlight.js to lowlight.
+const low = require('lowlight')
+low.registerLanguage('mun', require('highlight.js/lib/languages/mun'))
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://mun-lang.org",
@@ -42,29 +46,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              languageExtensions: [
-                {
-                  language: "mun",
-                  definition: {
-                    comment: {
-                      pattern: /(^|[^\\:])\/\/.*/,
-                      lookbehind: true,
-                      greedy: true
-                    },
-                    boolean: /\b(?:true|false)\b/,
-                    function: /\w+(?=\()/,
-                    keyword: /\b(?:and|break|do|else|false|for|fn|if|in|nil|return|true|while|let|mut|struct|class|never|loop|pub|super|self|package|int|float|bool)\b/,
-                    number: /\b(?:0x[\dA-Fa-f](?:_?[\dA-Fa-f])*|0o[0-7](?:_?[0-7])*|0b[01](?:_?[01])*|(\d(?:_?\d)*)?\.?\d(?:_?\d)*(?:[Ee][+-]?\d+)?)(?:_?(?:[iu](?:8|16|32|64)?|f32|f64))?\b/,
-                    operator: /[-+*\/=]=?/,
-                    punctuation: /\.{1,3}|[{}[\];(),:]/,
-                  }
-                }
-              ]
-            },
-          },
+          `gatsby-remark-highlight.js`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-slug`,

@@ -4209,6 +4209,12 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.0"
 
+fault@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/fault/-/fault-1.0.4.tgz#eafcfc0a6d214fc94601e170df29954a4f842f13"
+  dependencies:
+    format "^0.2.0"
+
 faye-websocket@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.10.0.tgz#4e492f8d04dfb6f89003507f6edbf2d501e7c6f4"
@@ -4461,6 +4467,10 @@ form-data@~2.3.2:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
+
+format@^0.2.0:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
 
 forwarded@~0.1.2:
   version "0.1.2"
@@ -4766,6 +4776,12 @@ gatsby-remark-copy-linked-files@^2.1.23:
     path-is-inside "^1.0.2"
     probe-image-size "^4.1.1"
     unist-util-visit "^1.4.1"
+
+gatsby-remark-highlight.js@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-highlight.js/-/gatsby-remark-highlight.js-0.0.1.tgz#10cacd56f18836e2bbb75710a732fc1293a7e525"
+  dependencies:
+    remark-highlight.js "^5.1.1"
 
 gatsby-remark-images@^3.1.25:
   version "3.1.25"
@@ -5573,6 +5589,9 @@ hastscript@^4.0.0:
 hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
+
+"highlight.js@file:./external/highlight.js", highlight.js@~9.16.0:
+  version "9.16.2"
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -6886,6 +6905,13 @@ lowercase-keys@1.0.0:
 lowercase-keys@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
+
+lowlight@^1.2.0:
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.13.1.tgz#c4f0e03906ebd23fedf2d258f6ab2f6324cf90eb"
+  dependencies:
+    fault "^1.0.0"
+    highlight.js "~9.16.0"
 
 lpad-align@^1.0.1:
   version "1.1.2"
@@ -9305,6 +9331,13 @@ relay-runtime@2.0.0:
   dependencies:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
+
+remark-highlight.js@^5.1.1:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/remark-highlight.js/-/remark-highlight.js-5.2.0.tgz#6d8d22085e0c76573744b7e3706fc232269f5b02"
+  dependencies:
+    lowlight "^1.2.0"
+    unist-util-visit "^1.0.0"
 
 remark-parse@^6.0.0, remark-parse@^6.0.3:
   version "6.0.3"

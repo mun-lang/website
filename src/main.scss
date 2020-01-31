@@ -209,30 +209,40 @@ main {
     } 
 }
 
-.gatsby-highlight {
-    position: relative;
+// .gatsby-highlight {
+//     position: relative;
 
-    > pre {
+//     > pre {
+//         border-radius: 3px;
+//         font-size: 11pt;
+//         margin-top: 0;
+//     }
+
+//     
+// }
+
+// .gatsby-highlight[data-language]::before {
+//     content: attr(data-language);
+//     color: black;
+//     background-color: #CFCFCF;
+//     display: inline-block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     font-size: 0.9em;
+//     border-radius: 0 0 0 5px;
+//     padding: 0 0.5em;
+//     text-shadow: none;
+// }
+
+@import "./styles/_highlight.scss";
+
+pre {
+    margin-top: 0;       
+    code {
         border-radius: 3px;
-        font-size: 11pt;
-        margin-top: 0;
+        
     }
-
-    @import "./styles/_code.css";
-}
-
-.gatsby-highlight[data-language]::before {
-    content: attr(data-language);
-    color: black;
-    background-color: #CFCFCF;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 0.9em;
-    border-radius: 0 0 0 5px;
-    padding: 0 0.5em;
-    text-shadow: none;
 }
 
 .bg-dark {
