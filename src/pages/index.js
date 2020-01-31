@@ -120,9 +120,19 @@ function IndexPage() {
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donations</a>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> &nbsp; Feedback</a>
             <a className="btn" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
-            <div style={{ marginTop: "2em" }}>
-              <p>Mun is sponsored by the following companies:</p>
-              <div className="pure-g" id="sponsors">
+          </div>
+        </section>
+        <section id="thanks" className="bg-light">
+          <div className="content" style={{marginTop: "2em"}}>
+            <h2>Thanks</h2>
+            <div>
+              <p>Mun would not exist without the hard work, time, and resources generously contributed by individuals and companies. We would like to thank everyone for making Mun a reality!</p>
+              <h4>Individuals</h4>     
+              <p>Mun is developed by a community. We are very thankful to the community for all of its contributions.</p>
+              <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun/graphs/contributors" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Individual contributors</a>
+              <h4>Corporate sponsors</h4>
+              <p>Mun is supported by companies through the use of infrastructure or by (facilitating) donations</p>
+              <div className="pure-g" id="sponsors">               
                 <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
                   <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"><NetlifyLogo /></a>
                 </div>
