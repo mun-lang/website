@@ -1,0 +1,64 @@
+@import "./variables";
+
+.react-tabs {
+    [role=tablist] {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    [role=tab] {
+        display: inline-block;
+
+        text-decoration: none;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-weight: 600;
+        font-size: 0.8em;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0em 1em;
+        cursor: pointer;
+        line-height: 1.5em;
+
+        margin-right: 0.1em;
+    }
+}
+
+.bg-dark .react-tabs {
+    [role=tab] {
+        background-color: darken($color4, 30);
+        color: $color2;
+
+        &:hover {
+            color: lighten($color2, 10);
+            border-color: $color1;
+            border-bottom-color: transparent;
+        }
+    }
+
+    [aria-selected=true] {
+        background-color: $color4;
+    }
+}
+
+.bg-light .react-tabs {
+    [role=tab] {
+        background-color: darken($color4, 30);
+        color: $color2;
+
+        &:hover {
+            background-color: darken($color4, 10);
+            color: lighten($color2, 10);
+        }
+    }
+
+    [aria-selected=true] {
+        background-color: $color4;
+
+        &:hover {
+            background-color: $color4;
+        }
+    }
+}

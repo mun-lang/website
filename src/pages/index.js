@@ -1,4 +1,5 @@
 import React from "react"
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,7 +13,7 @@ import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 import Warning from "../images/warning.svg"
 
 function IndexPage() {
-  const { site, markdownRemark, allMarkdownRemark  } = useStaticQuery(
+  const { site, syntax, syntaxMaster, allMarkdownRemark  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -25,8 +26,13 @@ function IndexPage() {
             openCollective
           }
         }
-        markdownRemark(
+        syntax: markdownRemark(
           fileAbsolutePath: {regex: "/\\/examples\\/syntax.md$/"}
+        ) {
+          html
+        }
+        syntaxMaster: markdownRemark(
+          fileAbsolutePath: {regex: "/\\/examples\\/syntax_master.md$/"}
         ) {
           html
         }
@@ -126,12 +132,23 @@ function IndexPage() {
             </div>
           </div>
         </section>
-        <section id="syntax">
+        <section id="syntax" className="bg-light">
           <div className="content">
             <h2>Syntax</h2>
             <p>The driving force behind the development of Mun is natively supported hot reloading for functions and data. As such, the language and its syntax will keep growing at the rate in which we add hot reloading-supported semantics.</p>
             <p>We take inspiration from a range of application, scripting, and systems programming languages, but we also want the community's input in defining a syntax that you find comfortable to use. We will regularly tweet proposals for new syntax, so make sure to <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer">follow us</a>.</p>
-            <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }}></div>
+            <Tabs>
+              <TabList>
+                <Tab>master</Tab>
+                <Tab>v0.1</Tab>
+              </TabList>
+              <TabPanel>
+                <div dangerouslySetInnerHTML={{ __html: syntaxMaster.html }}></div>
+              </TabPanel>
+              <TabPanel>
+                <div dangerouslySetInnerHTML={{ __html: syntax.html }}></div>                  
+              </TabPanel>  
+            </Tabs>
           </div>
         </section>
         <section id="recent-posts" class="bg-light">

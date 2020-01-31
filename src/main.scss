@@ -3,6 +3,7 @@
 @import "./fonts/font.scss";
 @import "./styles/_variables.scss";
 @import "./styles/_button.scss";
+@import "./styles/_tabs.scss";
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
@@ -214,6 +215,7 @@ main {
     > pre {
         border-radius: 3px;
         font-size: 11pt;
+        margin-top: 0;
     }
 
     @import "./styles/_code.css";
