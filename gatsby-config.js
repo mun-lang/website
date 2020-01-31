@@ -56,7 +56,7 @@ module.exports = {
                     },
                     boolean: /\b(?:true|false)\b/,
                     function: /\w+(?=\()/,
-                    keyword: /\b(?:bool|float|fn|int|let)\b/,
+                    keyword: /\b(?:and|break|do|else|false|for|fn|if|in|nil|return|true|while|let|mut|struct|class|never|loop|pub|super|self|package|int|float|bool)\b/,
                     number: /\b(?:0x[\dA-Fa-f](?:_?[\dA-Fa-f])*|0o[0-7](?:_?[0-7])*|0b[01](?:_?[01])*|(\d(?:_?\d)*)?\.?\d(?:_?\d)*(?:[Ee][+-]?\d+)?)(?:_?(?:[iu](?:8|16|32|64)?|f32|f64))?\b/,
                     operator: /[-+*\/=]=?/,
                     punctuation: /\.{1,3}|[{}[\];(),:]/,
