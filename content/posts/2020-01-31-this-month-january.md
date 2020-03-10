@@ -103,4 +103,4 @@ Some bug fixes and miscellaneous quality of life improvements were also merged:
 
 #### Roadmap
 
-Next up on our [TODO list](https://trello.com/b/mf2Rkx6N/mun) are language support for external functions, wrapping up Mun-C interoperability, hot reloading of struct data, and garbage collection.
+Next up on our [TODO list](https://trello.com/b/ZcMiREnC/mun-roadmap) are language support for external functions, wrapping up Mun-C interoperability, hot reloading of struct data, and garbage collection.
