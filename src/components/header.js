@@ -36,7 +36,7 @@ class Header extends React.Component {
             <Link className="pure-menu-heading pure-menu-link" to="/">
               Mun
           </Link>
-            <a href="#" class={"hamburger" + (showMenu ? " x" : "")} id="toggle" onClick={() => this.toggleMenu()}><s class="bar"></s><s class="bar"></s></a>
+            <a class={"hamburger" + (showMenu ? " x" : "")} id="toggle" onClick={() => this.toggleMenu()}><s class="bar"></s><s class="bar"></s></a>
           </div>
           <div class={"pure-u-1 pure-u-md-1-2 pure-menu pure-menu-horizontal menu-contents"}>
             <ul className="pure-menu-list">
