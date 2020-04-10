@@ -12,7 +12,7 @@ fn main() {
 }
 
 // The order of function definitions doesn't matter
-fn fibonacci(foo: Args):int {
+fn fibonacci(foo: Args) -> int {
     let n = foo.n;
     if n <= 1 {
         n
@@ -22,7 +22,7 @@ fn fibonacci(foo: Args):int {
 }
 
 
-fn nth(): Args {
+fn nth() -> Args {
     // Mun allows explicit returns
     Args { n: 7 }
 }
