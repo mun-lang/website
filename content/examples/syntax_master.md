@@ -1,18 +1,18 @@
 ```mun
 struct Args {
-    n: int,
+    n: i32,
 }
 
 fn main() {
     let result = fibonacci(nth());
 
-    // Comments: Mun natively supports bool, float, and int
+    // Comments: Mun natively supports bool, f32, f64, i8, u8, u128, i128, usize, isize, etc.
     let is_true = true;
-    let var: float = 0.5;
+    let var = 0.5;
 }
 
 // The order of function definitions doesn't matter
-fn fibonacci(foo: Args) -> int {
+fn fibonacci(foo: Args) -> i32 {
     let n = foo.n;
     if n <= 1 {
         n
@@ -26,5 +26,4 @@ fn nth() -> Args {
     // Mun allows explicit returns
     Args { n: 7 }
 }
-
 ```
