@@ -64,7 +64,7 @@ Meanwhile, the Mun community has not been standing by idly:
 * We welcomed our first community contributions (PRs [#66](https://github.com/mun-lang/mun/pull/66) & [#67](https://github.com/mun-lang/mun/pull/67)) for two of our [good first issues](https://github.com/mun-lang/mun/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). This is a great way for community members to gain an understanding of our codebase and workflow, while helping us implement important fixes and improvements.
 * A community member who works on [Veloren](https://gitlab.com/veloren/veloren), created a proof of concept for Mun-powered hot reloading inside the game:
   
-  <img src="https://media.discordapp.net/attachments/641225281750827019/660952501553594382/reload.gif?width=500&height=334" alt="Mun hot reloading in Verloren" />
+  <img src="../images/veloren-hot-reload.gif" alt="Mun hot reloading in Veloren" />
 
 
 Are you interested in contributing to Mun or do you just want to receive the latest updates? Then join us on [Discord](https://discord.gg/SfvvcCU), follow us on [Twitter](https://twitter.com/munlangorg), or watch us on [Github](https://github.com/mun-lang/mun).
