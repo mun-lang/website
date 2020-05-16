@@ -140,7 +140,7 @@ function IndexPage() {
             <Tabs>
               <TabList>
                 <Tab>master</Tab>
-                <Tab>v0.1</Tab>
+                <Tab>v0.2</Tab>
               </TabList>
               <TabPanel>
                 <div dangerouslySetInnerHTML={{ __html: syntaxMaster.html }}></div>
