@@ -66,7 +66,7 @@ class Header extends React.Component {
                       <a className="pure-menu-link" href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donate</a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link" href="https://trello.com/b/ZcMiREnC/mun-roadmap" target="_blank" rel="noopener noreferrer">Roadmap</a>
+                      <a className="pure-menu-link" href="https://github.com/mun-lang/mun/projects/2" target="_blank" rel="noopener noreferrer">Roadmap</a>
                     </li>
                     <li className="pure-menu-item">
                       <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
