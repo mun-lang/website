@@ -1,0 +1,44 @@
+@import "./styles/_variables.scss";
+
+:root {
+    --grvsc-border-radius: 3px;
+    --grvsc-padding-left: 1rem;
+    --grvsc-padding-right: 1rem;
+    --grvsc-padding-top: 0.8rem;
+    --grvsc-padding-bottom: 0.8rem;
+}
+
+code.grvsc-code {
+    font-size: 11pt;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+div.react-tabs .grvsc-container {
+    margin-top: 0;
+    border-top-left-radius: 0;
+}
+ 
+.grvsc-container {
+    position: relative;
+
+    > pre {
+        border-radius: 3px;
+        font-size: 11pt;
+        margin-top: 0;
+    }
+}
+
+.grvsc-container[data-language]::before {
+    content: attr(data-language);
+    color: black;
+    background-color: #CFCFCF;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.8em;
+    border-radius: 0 0 0 5px;
+    padding: 0 0.5em;
+    text-shadow: none;
+    font-family: $font;
+}

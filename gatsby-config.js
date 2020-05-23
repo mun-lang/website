@@ -43,27 +43,16 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: `gatsby-transformer-remark`,
             options: {
-              languageExtensions: [
-                {
-                  language: "mun",
-                  definition: {
-                    comment: {
-                      pattern: /(^|[^\\:])\/\/.*/,
-                      lookbehind: true,
-                      greedy: true
-                    },
-                    boolean: /\b(?:true|false)\b/,
-                    function: /\w+(?=\()/,
-                    keyword: /\b(?:and|break|do|else|false|for|fn|if|in|nil|return|true|while|let|mut|struct|class|never|loop|pub|super|self|package|int|float|bool)\b/,
-                    number: /\b(?:0x[\dA-Fa-f](?:_?[\dA-Fa-f])*|0o[0-7](?:_?[0-7])*|0b[01](?:_?[01])*|(\d(?:_?\d)*)?\.?\d(?:_?\d)*(?:[Ee][+-]?\d+)?)(?:_?(?:[iu](?:8|16|32|64)?|f32|f64))?\b/,
-                    operator: /[-+*\/=]=?/,
-                    punctuation: /\.{1,3}|[{}[\];(),:]/,
-                  }
+              plugins: [{
+                resolve: `gatsby-remark-vscode`,
+                options: {
+                  theme: 'Dark+ (default dark)', // Or install your favorite theme from GitHub
+                  extensions: ['mun']
                 }
-              ]
-            },
+              }]
+            }
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
