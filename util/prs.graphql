@@ -1,0 +1,17 @@
+# GraphQL query to fetch all merged PRs in a specific month 
+# (run in https://developer.github.com/v4/explorer/)
+
+{
+  search(query: "org:mun-lang is:pr merged:>=2020-05-01", type: ISSUE, last: 100) {
+    edges {
+      node {
+        ... on PullRequest {
+          number
+          url
+          title
+          mergedAt
+        }
+      }
+    }
+  }
+}
