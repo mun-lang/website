@@ -197,10 +197,10 @@ function IndexPage() {
               <p>Mun is supported by companies through the use of infrastructure or by (facilitating) donations</p>
               <div className="pure-g" id="sponsors">               
                 <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-                  <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"><NetlifyLogo /></a>
+                  <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" aria-label="Netlify"><NetlifyLogo /></a>
                 </div>
                 <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
-                  <a href="https://amethyst.rs/" target="_blank" rel="noopener noreferrer"><AmethystLogo style={{ width: "100px" }} /></a>
+                  <a href="https://amethyst.rs/" target="_blank" rel="noopener noreferrer" aria-label="Amethyst Foundation"><AmethystLogo style={{ width: "100px" }} /></a>
                 </div>
               </div>
             </div>

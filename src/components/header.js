@@ -36,7 +36,7 @@ class Header extends React.Component {
             <Link className="pure-menu-heading pure-menu-link" to="/">
               Mun
           </Link>
-            <a class={"hamburger" + (showMenu ? " x" : "")} id="toggle" onClick={() => this.toggleMenu()}><s class="bar"></s><s class="bar"></s></a>
+            <button class={"hamburger" + (showMenu ? " x" : "")} id="toggle" onClick={() => this.toggleMenu()} aria-label="Menu"><s class="bar"></s><s class="bar"></s></button>
           </div>
           <div class={"pure-u-1 pure-u-md-1-2 pure-menu pure-menu-horizontal menu-contents"}>
             <ul className="pure-menu-list">
@@ -69,13 +69,13 @@ class Header extends React.Component {
                       <a className="pure-menu-link" href="https://github.com/mun-lang/mun/projects/2" target="_blank" rel="noopener noreferrer">Roadmap</a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                      <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer" aria-label="Mun GitHub"><i className="fab fa-github"></i></a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link icon" href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
+                      <a className="pure-menu-link icon" href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer" aria-label="Mun Discord"><i className="fab fa-discord"></i></a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link icon" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+                      <a className="pure-menu-link icon" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer" aria-label="Mun Twitter"><i className="fab fa-twitter"></i></a>
                     </li>
                     </>
                   )}
