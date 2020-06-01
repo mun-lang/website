@@ -172,7 +172,8 @@ function IndexPage() {
                   )
                 })}
             </div>
-            <Link className="btn" to="/blog" id="all-posts">All posts</Link>
+            <Link className="btn" to="/blog" id="all-posts" style={{ marginRight: "0.5em" }}>All posts</Link>
+            <a className="btn" href="rss.xml"><i className="fas fa-rss"></i> &nbsp; subscribe</a>
           </div>
         </section>
         <section id="support" className="bg-light">
