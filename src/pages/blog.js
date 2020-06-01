@@ -15,9 +15,10 @@ class BlogIndex extends React.Component {
       <Layout>
         <SEO title="Blog" />
         <div id="blog">
-          <header className="content">
+          <header className="content bg-light">
             <h2>Blog</h2>
             <p>On our blog we try to write frequent updates about the development of Mun.</p>
+            <a className="btn" href="../rss.xml"><i className="fas fa-rss"></i> &nbsp; subscribe</a>
           </header>
           <section id="posts">
             <div className="inner">
