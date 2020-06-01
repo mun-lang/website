@@ -1,5 +1,10 @@
 @import "./_variables.scss";
 
+button.hamburger {
+    border: none;
+    background: none;
+}
+
 .hamburger {
     width: 34px;
     height: 34px;

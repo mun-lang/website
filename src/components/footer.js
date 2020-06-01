@@ -39,9 +39,9 @@ const Footer = () => {
                     </div>
                     <div class="pure-u-1 pure-u-md-1-3" id="social">
                         <h6>Social</h6>
-                        <a href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                        <a href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
-                        <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+                        <a href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer" aria-label="Mun GitHub"><i className="fab fa-github"></i></a>
+                        <a href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer" aria-label="Mun Discord"><i className="fab fa-discord"></i></a>
+                        <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer" aria-label="Mun Twitter"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div style={{
