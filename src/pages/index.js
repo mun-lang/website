@@ -9,7 +9,9 @@ import "./index.scss"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 import AmethystLogo from "../images/amethyst-logo-standard.svg"
+import MozillaLogo from "../images/moz-logo-bw-rgb.svg"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
+import OpenCollectiveIcon from "../images/oc-icon.png"
 import Warning from "../images/warning.svg"
 
 function IndexPage() {
@@ -180,10 +182,11 @@ function IndexPage() {
           <div className="content">
             <h2>Support us</h2>
             <p>The Mun programming language is developed by a group of volunteers. To further advance the project, we welcome any and all:</p>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contributions</a>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donations</a>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> &nbsp; Feedback</a>
-            <a className="btn" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Updates</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contribute</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer"><img src={OpenCollectiveIcon} alt="" width="16px" height="16px" style={{ marginBottom: "-2px" }} /> Donate</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> &nbsp; Engage</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Follow</a>
+            <a className="btn" href="https://github.com/sponsors/mun-lang" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Sponsor</a>
           </div>
         </section>
         <section id="thanks" className="bg-light">
@@ -193,10 +196,14 @@ function IndexPage() {
               <p>Mun would not exist without the hard work, time, and resources generously contributed by individuals and companies. We would like to thank everyone for making Mun a reality!</p>
               <h4>Individuals</h4>     
               <p>Mun is developed by a community. We are very thankful to the community for all of its contributions.</p>
-              <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun/graphs/contributors" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Individual contributors</a>
+              <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun/graphs/contributors" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contributors</a>
+              <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/sponsors/mun-lang" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Sponsors</a>
               <h4>Corporate sponsors</h4>
               <p>Mun is supported by companies through the use of infrastructure or by (facilitating) donations</p>
-              <div className="pure-g" id="sponsors">               
+              <div className="pure-g" id="sponsors">
+                <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+                  <a href="https://www.mozilla.org/en-US/moss/" target="_blank" rel="noopener noreferrer" aria-label="Mozilla Open Source Support"><MozillaLogo /></a>
+                </div>
                 <div className="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
                   <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" aria-label="Netlify"><NetlifyLogo /></a>
                 </div>
