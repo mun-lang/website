@@ -200,29 +200,7 @@
     }
 }
 
-#recent-posts {
-    z-index: 200;
-    position: relative;
-    padding: 0 0 1em 0;
-    background-color: $color1;
-    margin-top: 3em;
-
-    &::before {
-        content: '';
-        display: block;
-        height: 225px;
-        width: 120%;
-        position: absolute;
-        top: -50px;
-        left: 50%;
-        background-color: $color1;
-        transform: translateX(-50%) rotate(-0.2deg);
-        -webkit-transform-origin: center top;
-        -ms-transform-origin: center top;
-        transform-origin: center top;
-        z-index: -150;
-    }
-
+.listing {
     h4 {
         margin-top: 1.5em;
         margin-bottom: 0.5em;
@@ -249,12 +227,79 @@
         header small {
             color: lighten($color2, 50);
         }
-    }    
+    }
+}
+
+#recent-posts {
+    z-index: 200;
+    position: relative;
+    padding: 0 0 1em 0;
+    background-color: $color1;
+    margin-top: 3em;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 225px;
+        width: 120%;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        background-color: $color1;
+        transform: translateX(-50%) rotate(-0.2deg);
+        -webkit-transform-origin: center top;
+        -ms-transform-origin: center top;
+        transform-origin: center top;
+        z-index: -150;
+    }
 
     #all-posts {
         margin-top: 2em;
         @media #{$md-up} {
             margin-top: 1em;
+        }
+    }
+}
+
+#showcase-reward {
+    text-decoration: none;
+    text-align: center;
+    
+    &:hover {
+        color: $color4;
+
+        p {
+            background: darken($color1, 4);
+        }
+    }
+
+    p {
+        $icon-size: 96px;
+        $font-size: 16px;
+        $height: calc(56.25% - 2px); /* 16:9 aspect ratio */
+
+        display: block;
+        width: calc(100% - 2px);
+        height: 0;
+        padding-bottom: $height; /* A CSS hack to force the height to the correct aspect ratio */
+        border: 1px solid #000;
+
+        & > span {
+            display: inline-block;
+            font-size: $icon-size;
+            line-height: $icon-size;
+        }
+
+        & > h3 {
+            font-weight: bold;
+            font-size: 20pt;
+            margin: calc(15% - 28px) 0 0 0;
+        }
+
+        & > h4 {
+            font-weight: bold;
+            font-size: 16pt;
+            margin: 16px 0 0 0;
         }
     }
 }

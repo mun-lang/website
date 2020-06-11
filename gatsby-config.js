@@ -4,9 +4,11 @@ module.exports = {
     title: `Mun Programming Language`,
     description: `Mun, a programming language empowering creation through iteration.`,
     author: `The Mun Development Team`,
-    twitter: `https://twitter.com/munlangorg`,
     discord: `https://discord.gg/SfvvcCU`,
-    openCollective: `https://opencollective.com/mun`
+    githubSponsor: `https://github.com/sponsors/mun-lang`,
+    openCollective: `https://opencollective.com/mun`,
+    repository: `https://github.com/mun-lang/mun`,
+    twitter: `https://twitter.com/munlangorg`,
   },
   plugins: [
     `gatsby-plugin-react-svg`,
@@ -24,6 +26,13 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/videos`,
       },
     },
     {
