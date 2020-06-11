@@ -12,6 +12,7 @@ import AmethystLogo from "../images/amethyst-logo-standard.svg"
 import MozillaLogo from "../images/moz-logo-bw-rgb.svg"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 import OpenCollectiveIcon from "../images/oc-icon.png"
+import PongVideo from "../videos/showcase/pong.mp4"
 import Warning from "../images/warning.svg"
 
 function IndexPage() {
@@ -23,9 +24,11 @@ function IndexPage() {
             title
             description
             author
-            twitter
             discord
+            githubSponsor
             openCollective
+            repository
+            twitter
           }
         }
         syntax: markdownRemark(
@@ -153,7 +156,7 @@ function IndexPage() {
             </Tabs>
           </div>
         </section>
-        <section id="recent-posts" class="bg-light">
+        <section id="recent-posts" class="bg-light listing">
           <div className="content">
             <h2>Recent blog posts</h2>
             <div className="pure-g">
@@ -178,15 +181,55 @@ function IndexPage() {
             <a className="btn" href="rss.xml"><i className="fas fa-rss"></i> &nbsp; subscribe</a>
           </div>
         </section>
+        <section id="showcase" className="listing">
+          <div className="content">
+            <h2>Make It or Break It</h2>
+            <div className="pure-g">
+              <div className="pure-u-1 pure-u-md-1-2">
+                <article>
+                  <header>
+                    <h5>Pong (est. 1972)</h5>
+                    <small>Mun v0.2, "The Mun Team"</small>
+                  </header>
+                  <section>
+                    <p>
+                      <video width="100%" controls>
+                        <source src={PongVideo} type="video/mp4" />
+                        Your browser does not support HTML5 video.
+                      </video>
+                    </p>
+                  </section>
+                </article>
+              </div>
+              <div className="pure-u-1 pure-u-md-1-2">
+                <article>
+                  <header>
+                    <h5>Your Make It or Break It Demo?</h5>
+                    <small>Mun v0.2, "You"</small>
+                  </header>
+                  <section>
+                    <a id="showcase-reward" href="https://github.com/mun-lang/mun/issues/220"  target="_blank" rel="noopener noreferrer" alt="Make It or Break It">
+                      <p>
+                        <span className="fas fa-medal" style={{ fontSize: "96px" }}></span>
+                        <h3>Most Voted Submission</h3>
+                        <h4>Season 1</h4>
+                      </p>
+                    </a>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="support" className="bg-light">
           <div className="content">
             <h2>Support us</h2>
             <p>The Mun programming language is developed by a group of volunteers. To further advance the project, we welcome any and all:</p>
-            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contribute</a>
+            <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.repository} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contribute</a>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer"><img src={OpenCollectiveIcon} alt="" width="16px" height="16px" style={{ marginBottom: "-2px" }} /> Donate</a>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.discord} target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> &nbsp; Engage</a>
             <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer"> <i className="fab fa-twitter"></i> &nbsp; Follow</a>
-            <a className="btn" href="https://github.com/sponsors/mun-lang" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Sponsor</a>
+            <a className="btn" href={site.siteMetadata.githubSponsor} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Sponsor</a>
           </div>
         </section>
         <section id="thanks" className="bg-light">
@@ -197,7 +240,7 @@ function IndexPage() {
               <h4>Individuals</h4>     
               <p>Mun is developed by a community. We are very thankful to the community for all of its contributions.</p>
               <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/mun-lang/mun/graphs/contributors" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Contributors</a>
-              <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href="https://github.com/sponsors/mun-lang" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Sponsors</a>
+              <a className="btn" style={{ marginRight: "0.5em", marginBottom: "0.5em" }} href={site.siteMetadata.githubSponsor} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> &nbsp; Sponsors</a>
               <h4>Corporate sponsors</h4>
               <p>Mun is supported by companies through the use of infrastructure or by (facilitating) donations</p>
               <div className="pure-g" id="sponsors">
