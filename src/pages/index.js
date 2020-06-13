@@ -83,6 +83,46 @@ function IndexPage() {
             <h5>We appreciate your interest in Mun, but you are a little early to the party. The Mun language and toolchain are still in the early stages of development and nowhere near production-ready. If that doesn't scare you, then please continue reading.</h5>
           </div>
         </section>
+        <section id="showcase" className="listing">
+          <div className="content bg-dark">
+            <h2>Make It or Break It</h2>
+            <div className="pure-g">
+              <div className="pure-u-1 pure-u-md-1-2">
+                <article>
+                  <header>
+                    <h5>Pong (est. 1972)</h5>
+                    <small>Mun v0.2, "The Mun Team"</small>
+                  </header>
+                  <section>
+                    <p>
+                      <video width="100%" controls>
+                        <source src={PongVideo} type="video/mp4" />
+                        Your browser does not support HTML5 video.
+                      </video>
+                    </p>
+                  </section>
+                </article>
+              </div>
+              <div className="pure-u-1 pure-u-md-1-2">
+                <article>
+                  <header>
+                    <h5>Your Make It or Break It Demo?</h5>
+                    <small>Mun v0.2, "You"</small>
+                  </header>
+                  <section>
+                    <a id="showcase-reward" href="https://github.com/mun-lang/mun/issues/220"  target="_blank" rel="noopener noreferrer" alt="Make It or Break It">
+                      <p>
+                        <span className="fas fa-medal" style={{ fontSize: "96px" }}></span>
+                        <h3>Most Voted Submission</h3>
+                        <h4>Season 1</h4>
+                      </p>
+                    </a>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="mission" className="bg-light">
           <div className="content">
             <h2>Mission</h2>
@@ -179,46 +219,6 @@ function IndexPage() {
             </div>
             <Link className="btn" to="/blog" id="all-posts" style={{ marginRight: "0.5em" }}>All posts</Link>
             <a className="btn" href="rss.xml"><i className="fas fa-rss"></i> &nbsp; subscribe</a>
-          </div>
-        </section>
-        <section id="showcase" className="listing">
-          <div className="content">
-            <h2>Make It or Break It</h2>
-            <div className="pure-g">
-              <div className="pure-u-1 pure-u-md-1-2">
-                <article>
-                  <header>
-                    <h5>Pong (est. 1972)</h5>
-                    <small>Mun v0.2, "The Mun Team"</small>
-                  </header>
-                  <section>
-                    <p>
-                      <video width="100%" controls>
-                        <source src={PongVideo} type="video/mp4" />
-                        Your browser does not support HTML5 video.
-                      </video>
-                    </p>
-                  </section>
-                </article>
-              </div>
-              <div className="pure-u-1 pure-u-md-1-2">
-                <article>
-                  <header>
-                    <h5>Your Make It or Break It Demo?</h5>
-                    <small>Mun v0.2, "You"</small>
-                  </header>
-                  <section>
-                    <a id="showcase-reward" href="https://github.com/mun-lang/mun/issues/220"  target="_blank" rel="noopener noreferrer" alt="Make It or Break It">
-                      <p>
-                        <span className="fas fa-medal" style={{ fontSize: "96px" }}></span>
-                        <h3>Most Voted Submission</h3>
-                        <h4>Season 1</h4>
-                      </p>
-                    </a>
-                  </section>
-                </article>
-              </div>
-            </div>
           </div>
         </section>
         <section id="support" className="bg-light">
