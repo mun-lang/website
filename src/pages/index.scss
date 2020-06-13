@@ -7,7 +7,7 @@
 
     min-height: 65vh;
     display: flex;
-    align-items: center;  
+    align-items: center;
     margin-bottom: 5em;
 
     .content {
@@ -29,7 +29,6 @@
     }
 
     @media #{$md-up} {
-        //margin-top: 1.5em;
         min-height: 65vh;
     }
 }
@@ -58,10 +57,9 @@
     }
 }
 
-#mission {
+#showcase {
     z-index: 200;
     position: relative;
-    padding: 0em 0 6em 0;
     background-color: $color1;
 
     &::before {
@@ -79,6 +77,10 @@
         -ms-transform-origin: center top;
         z-index: -150;
     }
+}
+
+#mission {
+    padding: 0em 0 6em 0;
 }
 
 #pillars {
