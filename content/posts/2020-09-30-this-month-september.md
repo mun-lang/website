@@ -1,7 +1,7 @@
 ---
 title: "This Month in Mun - September 2020"
 author: "The Mun Team"
-excerpt: "The community and core team worked together on improvements to bring Mun closer to a new release."
+excerpt: "The community and core team worked together on improvements to bring Mun closer to a new release. Work is also progressing to support multiple source files."
 ---
 
 The community and core team worked together on improvements to bring Mun closer to a new release. 
@@ -17,8 +17,8 @@ fixed some deprecations:
 
 We are very thankful for your contributions and we hope to see more of them in the future!
 
-More community contributions came from a contributor who tried out our C++ bindings and who 
-immediately fixed some issues:
+More community contributions came from a contributor who tried out our C++ bindings and immediately 
+fixed some issues:
 
 * **fix: resolve compiler error in MunGuid equality operator and add assignment operators to RuntimeFunction** [[PR#9]](https://github.com/mun-lang/runtime-ffi/pull/9)
 
@@ -54,8 +54,8 @@ focusing on compiler support for [`use` statements](https://github.com/mun-lang/
 [accessibility specifiers](https://github.com/mun-lang/mun/issues/248).
 
 Last month we talked about wanting to release Mun v0.3 but we are not quite there yet. We chose to 
-delay the release a little bit to give ourselves some time to properly focus on polish and get to 
-the quality standard we aspire. 
+delay the release a little bit to give ourselves some time to achieve the level of polish that we
+aspire to deliver in every release.
 
 For more details, please check out our [high-level
 roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the
