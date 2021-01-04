@@ -1,13 +1,13 @@
 ---
 title: "This Month in Mun - December 2020"
 author: "The Mun Team"
-excerpt: "December was again a slow month, holidays and day jobs have kept the core developers under wraps."
+excerpt: "December - again - was a slow month; holidays and day jobs keeping the core developers busy."
 ---
 
-December was again a slow month, holidays and day jobs have kept the core developers under wraps. We 
-did finally manage to work together during the holiday break.
+December - again - was a slow month; holidays and day jobs keeping the core developers busy. We did 
+finally manage to work together during the holiday break.
 
-As stated in our [last months update][lmu] we are looking into the possibility of funding a third 
+As stated in [last month's update][lmu] we are looking into the possibility of funding a third  
 developer ourselves - albeit a token amount. Sadly, none of our existing contributors can dedicate 
 more of their precious time either, so we are on the lookout for new talent.
 
@@ -32,8 +32,8 @@ take a look at our [*good first issues*][gfi] or reach out to us on [Discord][di
 #### Mun v0.3 progress
 
 * **feature: use statements language support** [[PR#290](https://github.com/mun-lang/mun/pull/290)]
-  The language side of things is about to be wrapped up to support multi-file projects with the 
-  introduction of `use` statements. We implemented `use` statements very similar to how they work in 
+  The language side of things to support multi-file projects is about to be wrapped up with the 
+  introduction of `use` statements. We implemented `use` statements similar to how they work in 
   Rust, including support for wildcard imports.
 
   ```mun
@@ -41,10 +41,10 @@ take a look at our [*good first issues*][gfi] or reach out to us on [Discord][di
   use package::bar::{self, Baz, *};
   ```
 
-  The next steps for our project management epic are to support runtime linking between assemblies.
+  The next step for our project management epic is to support runtime linking between assemblies.
 
 * **bump: rust 1.49** [[PR#291](https://github.com/mun-lang/mun/pull/291)] and **bump: rust 1.48** [[PR#289](https://github.com/mun-lang/mun/pull/289)]
-  We update our code base to work with the latest versions of Rust. This also always includes all 
+  We updated our codebase to work with the latest versions of Rust. This also included fixes for new
   clippy warnings.
 
 For more details, please check out our [high-level
