@@ -10,7 +10,7 @@ The biggest of which will be support for dynamically sized arrays.
 #### Mun v0.3
 
 This month was highlighted by the release of Mun v0.3. 
-This release has take us quite some time but we finally managed to put the finishing touches to the third release of Mun. 
+We expected to release Mun v0.3 within a few months of Mun v0.2 but this was pushed back a couple of times because we added more and more features to the release.
 Mun v0.3 adds support for modules & multi-file projects, a functioning language server which features autocompletion and a lot more. 
 The [Mun v0.3 release blog][v3r] highlights all of the new features packed in this release.
 
