@@ -19,8 +19,7 @@ The [Mun v0.3 release blog][v3r] highlights all of the new features packed in th
 #### Mun v0.4
 
 Mun v0.4 will be the next release of the Mun programming language. 
-We expected to release Mun v0.3 within a few months of Mun v0.2 but this was pushed back a couple of times because we added more and more features to the release. 
-We concluded that the next time around we will try to create smaller increments with less features so we are (hopefully) able to release faster and more often. As it stands the [Mun v0.4 milestone][v4m] is a lot smaller than our original Mun v0.3 milestone.
+After Mun v0.3's delays, we concluded that from now on we will create smaller increments - with less features - so we are (hopefully) able to release faster and more often. As it stands the [Mun v0.4 milestone][v4m] is a lot smaller than our original Mun v0.3 milestone.
 
 * **[RFC] dynamically sized arrays** [[PR#324]](https://github.com/mun-lang/mun/pull/324)
 
