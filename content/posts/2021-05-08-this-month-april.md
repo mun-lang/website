@@ -12,7 +12,7 @@ The biggest of which will be support for dynamically sized arrays.
 Last month we were able to release Mun v0.3. 
 This release has take us quite some time but we finally managed to put the finishing touches to the third release of Mun. 
 Mun v0.3 adds support for modules & multi-file projects, a functioning language server which features autocompletion and a lot more. 
-The [Mun v0.3 release blog](https://mun-lang.org/blog/2021/04/11/release-mun-v0-3-0/) highlights all of the new features packed in this release.
+The [Mun v0.3 release blog][v3r] highlights all of the new features packed in this release.
 
 <img src="../images/autocomplete.gif" alt="Autocomplete working for Mun in VSCode " />
 
