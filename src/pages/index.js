@@ -12,6 +12,7 @@ import AmethystLogo from "../images/amethyst-logo-standard.svg"
 import MozillaLogo from "../images/moz-logo-bw-rgb.svg"
 import NetlifyLogo from "../images/netlify-full-logo-light.svg"
 import OpenCollectiveIcon from "../images/oc-icon.png"
+import MunLogo from "../images/logo.svg"
 import PongVideo from "../videos/showcase/pong.mp4"
 import Warning from "../images/warning.svg"
 
@@ -73,7 +74,10 @@ function IndexPage() {
       <div id="home">
         <section className="pitch">
           <div className="content">
-            <h1>Mun<div className="highlight"></div></h1>
+            <div style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
+              <h1><MunLogo style={{height: "2.5em", paddingRight: "0.5em"}} /></h1>
+              <h1>Mun</h1>
+            </div>
             <h3>A programming language empowering creation through iteration.</h3>
           </div>
         </section>

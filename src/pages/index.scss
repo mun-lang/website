@@ -5,7 +5,7 @@
     background-color: $color1;
     color: $color2;
 
-    min-height: 65vh;
+    min-height: 57vh;
     display: flex;
     align-items: center;
     margin-bottom: 5em;
@@ -17,19 +17,16 @@
 
     h1 {
         margin-bottom: 0em;
-        margin-left: -30px;
-        display: inline-block;
-        border-left: 8px solid $color4;
-        padding: 4px 0px 4px 22px;
     } 
 
     h3 {
-        margin-top: 0;
+        padding-left: 0em;
+        margin-top: 10px;
         max-width: 20em;
     }
 
     @media #{$md-up} {
-        min-height: 65vh;
+        min-height: 57vh; 
     }
 }
 
