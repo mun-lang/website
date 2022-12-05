@@ -17,7 +17,7 @@ import PongVideo from "../videos/showcase/pong.mp4"
 import Warning from "../images/warning.svg"
 
 function IndexPage() {
-  const { site, syntax, syntaxMaster, allMarkdownRemark  } = useStaticQuery(
+  const { site, syntax, syntaxMain, allMarkdownRemark  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -37,8 +37,8 @@ function IndexPage() {
         ) {
           html
         }
-        syntaxMaster: markdownRemark(
-          fileAbsolutePath: {regex: "/\\/examples\\/syntax_master.md$/"}
+        syntaxMain: markdownRemark(
+          fileAbsolutePath: {regex: "/\\/examples\\/syntax_main.md$/"}
         ) {
           html
         }
@@ -188,11 +188,11 @@ function IndexPage() {
             <p>We take inspiration from a range of application, scripting, and systems programming languages, but we also want the community's input in defining a syntax that you find comfortable to use. We will regularly tweet proposals for new syntax, so make sure to <a href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer">follow us</a>.</p>
             <Tabs>
               <TabList>
-                <Tab>master</Tab>
+                <Tab>main</Tab>
                 <Tab>v0.2</Tab>
               </TabList>
               <TabPanel>
-                <div dangerouslySetInnerHTML={{ __html: syntaxMaster.html }}></div>
+                <div dangerouslySetInnerHTML={{ __html: syntaxMain.html }}></div>
               </TabPanel>
               <TabPanel>
                 <div dangerouslySetInnerHTML={{ __html: syntax.html }}></div>                  
