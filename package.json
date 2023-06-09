@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "The Mun Team",
   "dependencies": {
-    "gatsby": "^4.15.2",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-feed": "^4.15.1",
     "gatsby-plugin-google-analytics": "^4.15.0",
     "gatsby-plugin-image": "^2.17.0",
