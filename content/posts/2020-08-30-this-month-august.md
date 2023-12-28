@@ -61,6 +61,6 @@ such, we've moved several "nice to have" issues to the next tock release - Mun v
 that we can release Mun v0.3 in about a month.
 
 For more details, please check out our [high-level
-roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the
+roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the
 upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are
 still to come.

@@ -63,5 +63,5 @@ debt in the process. At the same time, we are adding support for multi-file proj
 compiler, and runtime.
 
 For more details, please check out our [high-level
-roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the
+roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the
 upcoming two releases - Mun v0.3 & v0.4 - as well as a backlog of features that are still to come.

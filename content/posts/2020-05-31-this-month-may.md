@@ -103,7 +103,7 @@ overall ergonomics. Since Mun v0.2 was a tick release, Mun v0.3 will be a tock
 release.
 
 We try to be as transparent as possible, so to that end we posted a [high-level
-roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details
+roadmap](https://github.com/mun-lang/mun/milestones) on Github that details
 new features for the upcoming two releases - Mun v0.3 & v0.4 - as well as a
 backlog of features that are still to come. We also assigned milestones to and
 labelled all issues to make them more insightful. The milestones can be

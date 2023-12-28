@@ -56,7 +56,7 @@ Can't wait?
 Please help us test the latest version of Mun by [building from source](https://github.com/mun-lang/mun#building-from-source).
 
 Interested in what we are doing next?
-Please check out our [high-level roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for future releases - Mun v0.4, and v0.5 - as well as a backlog of features that are still to come.
+Please check out our [high-level roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for future releases - Mun v0.4, and v0.5 - as well as a backlog of features that are still to come.
 
 #### Community
 
