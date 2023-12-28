@@ -58,6 +58,6 @@ delay the release a little bit to give ourselves some time to achieve the level 
 aspire to deliver in every release.
 
 For more details, please check out our [high-level
-roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the
+roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the
 upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are
 still to come.

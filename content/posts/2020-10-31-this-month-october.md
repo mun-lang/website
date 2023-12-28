@@ -87,7 +87,7 @@ Together with soon to be merged PRs, that should bring us within earshot of the 
 * **WIP: refactor: replace `TypeInfo` with `TypeRef` for runtime linking of types** [[PR#268]](https://github.com/mun-lang/mun/pull/268)
 
 For more details, please check out our [high-level
-roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the
+roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the
 upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are
 still to come.
 

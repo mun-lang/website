@@ -48,6 +48,6 @@ take a look at our [*good first issues*][gfi] or reach out to us on [Discord][di
   clippy warnings.
 
 For more details, please check out our [high-level
-roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the
+roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the
 upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are
 still to come.

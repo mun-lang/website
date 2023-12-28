@@ -43,7 +43,7 @@ After that we'll start the process of testing our Rust & C++ bindings, adding mi
 Can't wait?
 Please help us test the latest version of Mun by [building from source](https://github.com/mun-lang/mun#building-from-source).
 
-For more details, please check out our [high-level roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are still to come.
+For more details, please check out our [high-level roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are still to come.
 
 #### Community
 

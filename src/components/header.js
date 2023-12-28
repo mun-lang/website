@@ -35,7 +35,7 @@ class Header extends React.Component {
           <div class="pure-u-1 pure-u-md-1-2 pure-menu pure-menu-horizontal">
             <Link className="pure-menu-heading pure-menu-link" to="/">
               Mun
-          </Link>
+            </Link>
             <button class={"hamburger" + (showMenu ? " x" : "")} id="toggle" onClick={() => this.toggleMenu()} aria-label="Menu"><s class="bar"></s><s class="bar"></s></button>
           </div>
           <div class={"pure-u-1 pure-u-md-1-2 pure-menu pure-menu-horizontal menu-contents"}>
@@ -47,8 +47,8 @@ class Header extends React.Component {
                 <a className="pure-menu-link" href="https://docs.mun-lang.org">Documentation</a>
               </li>
               <StaticQuery
-                  query={
-                    graphql`
+                query={
+                  graphql`
                       query {
                         site {
                           siteMetadata {
@@ -59,14 +59,14 @@ class Header extends React.Component {
                         }
                       }
                     `
-                  }
-                  render={({ site }) => (
-                    <>
+                }
+                render={({ site }) => (
+                  <>
                     <li className="pure-menu-item">
                       <a className="pure-menu-link" href={site.siteMetadata.openCollective} target="_blank" rel="noopener noreferrer">Donate</a>
                     </li>
                     <li className="pure-menu-item">
-                      <a className="pure-menu-link" href="https://github.com/mun-lang/mun/projects/2" target="_blank" rel="noopener noreferrer">Roadmap</a>
+                      <a className="pure-menu-link" href="https://github.com/mun-lang/mun/milestones" target="_blank" rel="noopener noreferrer">Roadmap</a>
                     </li>
                     <li className="pure-menu-item">
                       <a className="pure-menu-link icon" href="https://github.com/mun-lang/mun" target="_blank" rel="noopener noreferrer" aria-label="Mun GitHub"><i className="fab fa-github"></i></a>
@@ -77,9 +77,9 @@ class Header extends React.Component {
                     <li className="pure-menu-item">
                       <a className="pure-menu-link icon" href={site.siteMetadata.twitter} target="_blank" rel="noopener noreferrer" aria-label="Mun Twitter"><i className="fab fa-twitter"></i></a>
                     </li>
-                    </>
-                  )}
-                />
+                  </>
+                )}
+              />
             </ul>
           </div>
         </div>

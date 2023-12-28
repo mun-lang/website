@@ -65,7 +65,7 @@ There are currently also a number of open Pull Requests in review that we hope t
 Part of those focus on enabling the use of multiple source files in the form of a Mun project. 
 Specifically, we worked on runtime linking of multiple assemblies, which brings all of the features of the past few months together.
 
-For more details, please check out our [high-level roadmap](https://github.com/mun-lang/mun/projects/2) on Github that details new features for the upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are still to come.
+For more details, please check out our [high-level roadmap](https://github.com/mun-lang/mun/milestones) on Github that details new features for the upcoming three releases - Mun v0.3, v0.4, and v0.5 - as well as a backlog of features that are still to come.
 
 #### Community
 
